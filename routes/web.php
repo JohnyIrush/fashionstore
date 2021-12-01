@@ -43,3 +43,8 @@ Route::get('inertia-welcome', function(){
 // Store UI Routes
 
 Route::get('/', [StoreController::class, 'home']);
+Route::get('/shop', [StoreController::class, 'shop']);
+Route::get('/about', [StoreController::class, 'about']);
+Route::get('/contact', [StoreController::class, 'contact']);
+Route::get('/cart', [StoreController::class, 'cart']);
+Route::get('/shop/product', [StoreController::class, 'shopProduct']);
