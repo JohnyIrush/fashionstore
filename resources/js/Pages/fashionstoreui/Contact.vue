@@ -1,8 +1,8 @@
 <template>
 <Header/>
-<div id="app">
+<div id="app" >
 
-  <form class="vue-form" @submit.prevent="submit">
+  <form class="vue-form bg-success" @submit.prevent="submit">
 
     <div class="error-message">
       <p v-show="!email.valid">Oh, please enter a valid email address.</p>
@@ -116,7 +116,7 @@ header h1 {
   border-radius: 4px;
   margin: 50px auto;
   width: 500px;
-  background-color: #fff;
+
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
 }
 .vue-form fieldset {
@@ -132,7 +132,7 @@ header h1 {
 }
 .vue-form h4,
 .vue-form .label {
-  color: #94aab0;
+  color: white;
   margin-bottom: 10px;
 }
 .vue-form .label {
@@ -380,7 +380,8 @@ header h1 {
     transform: scale(0.8);
   }
 }
-
+/*General*/
+.bg-success { background-color: #59ab6e !important;}
 </style>
 
 <script>

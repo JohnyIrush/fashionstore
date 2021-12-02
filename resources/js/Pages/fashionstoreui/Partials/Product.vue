@@ -685,10 +685,12 @@
 </template>
 
 <style scoped>
+/*
     .card-img {
         height: 150px !important;
         width: 150px !important;
     }
+*/
 </style>
 
 <script>

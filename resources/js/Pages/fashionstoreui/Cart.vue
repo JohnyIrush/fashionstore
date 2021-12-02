@@ -1,122 +1,222 @@
 <template>
 <Header/>
-<div class="container px-4 py-5 mx-auto">
-    <div class="row d-flex justify-content-center">
-        <div class="col-5">
-            <h4 class="heading">Shopping Bag</h4>
-        </div>
-        <div class="col-7">
-            <div class="row text-right">
-                <div class="col-4">
-                    <h6 class="mt-2">Format</h6>
-                </div>
-                <div class="col-4">
-                    <h6 class="mt-2">Quantity</h6>
-                </div>
-                <div class="col-4">
-                    <h6 class="mt-2">Price</h6>
-                </div>
+<!--Section: Block Content-->
+<section>
+
+  <!--Grid row-->
+  <div class="row">
+
+    <!--Grid column-->
+    <div class="col-lg-8">
+
+      <!-- Card -->
+      <div class="card wish-list mb-3">
+        <div class="card-body">
+
+          <h5 class="mb-4">Cart (<span>2</span> items)</h5>
+
+          <div class="row mb-4">
+            <div class="col-md-5 col-lg-3 col-xl-3">
+              <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                <img class="img-fluid w-100"
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg" alt="Sample">
+                <a href="#!">
+                  <div class="mask waves-effect waves-light">
+                    <img class="img-fluid w-100"
+                      src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg">
+                    <div class="mask rgba-black-slight waves-effect waves-light"></div>
+                  </div>
+                </a>
+              </div>
             </div>
+            <div class="col-md-7 col-lg-9 col-xl-9">
+              <div>
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5>Blue denim shirt</h5>
+                    <p class="mb-3 text-muted text-uppercase small">Shirt - blue</p>
+                    <p class="mb-2 text-muted text-uppercase small">Color: blue</p>
+                    <p class="mb-3 text-muted text-uppercase small">Size: M</p>
+                  </div>
+                  <div>
+                    <div class="def-number-input number-input safari_only mb-0 w-100">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        class="minus"></button>
+                      <input class="quantity" min="0" name="quantity" value="1" type="number">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        class="plus"></button>
+                    </div>
+                    <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                      (Note, 1 piece)
+                    </small>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                        class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                    <a href="#!" type="button" class="card-link-secondary small text-uppercase"><i
+                        class="fas fa-heart mr-1"></i> Move to wish list </a>
+                  </div>
+                  <p class="mb-0"><span><strong>$17.99</strong></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="row mb-4">
+            <div class="col-md-5 col-lg-3 col-xl-3">
+              <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                <img class="img-fluid w-100"
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg" alt="Sample">
+                <a href="#!">
+                  <div class="mask waves-effect waves-light">
+                    <img class="img-fluid w-100"
+                      src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
+                    <div class="mask rgba-black-slight waves-effect waves-light"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-9 col-xl-9">
+              <div>
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5>Red hoodie</h5>
+                    <p class="mb-3 text-muted text-uppercase small">Shirt - red</p>
+                    <p class="mb-2 text-muted text-uppercase small">Color: red</p>
+                    <p class="mb-3 text-muted text-uppercase small">Size: M</p>
+                  </div>
+                  <div>
+                    <div class="def-number-input number-input safari_only mb-0 w-100">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        class="minus"></button>
+                      <input class="quantity" min="0" name="quantity" value="1" type="number">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        class="plus"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                        class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                    <a href="#!" type="button" class="card-link-secondary small text-uppercase"><i
+                        class="fas fa-heart mr-1"></i> Move to wish list </a>
+                  </div>
+                  <p class="mb-0"><span><strong>$35.99</strong></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-primary mb-0"><i class="fas fa-info-circle mr-1"></i> Do not delay the purchase, adding
+            items to your cart does not mean booking them.</p>
+
         </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-3">
+        <div class="card-body">
+
+          <h5 class="mb-4">Expected shipping delivery</h5>
+
+          <p class="mb-0"> Thu., 12.03. - Mon., 16.03.</p>
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-3">
+        <div class="card-body">
+
+          <h5 class="mb-4">We accept</h5>
+
+          <img class="mr-2" width=""
+            src=""
+            alt="Visa">
+          <img class="mr-2" width=""
+            src=""
+            alt="American Express">
+          <img class="mr-2" width=""
+            src=""
+            alt="Mastercard">
+          <img class="mr-2" width=""
+            src=""
+            alt="PayPal acceptance mark">
+        </div>
+      </div>
+      <!-- Card -->
+
     </div>
-    <div class="row d-flex justify-content-center border-top">
-        <div class="col-5">
-            <div class="row d-flex">
-                <div class="book"> <img src="https://i.imgur.com/2DsA49b.jpg" class="book-img"> </div>
-                <div class="my-auto flex-column d-flex pad-left">
-                    <h6 class="mob-text">Thinking, Fast and Slow</h6>
-                    <p class="mob-text">Daniel Kahneman</p>
-                </div>
-            </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-4">
+
+      <!-- Card -->
+      <div class="card mb-3">
+        <div class="card-body">
+
+          <h5 class="mb-3">The total amount of</h5>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+              Temporary amount
+              <span>$25.98</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+              Shipping
+              <span>Gratis</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+              <div>
+                <strong>The total amount of</strong>
+                <strong>
+                  <p class="mb-0">(including VAT)</p>
+                </strong>
+              </div>
+              <span><strong>$53.98</strong></span>
+            </li>
+          </ul>
+
+          <button type="button" class="btn btn-primary btn-block waves-effect waves-light">go to checkout</button>
+
         </div>
-        <div class="my-auto col-7">
-            <div class="row text-right">
-                <div class="col-4">
-                    <p class="mob-text">Digital</p>
-                </div>
-                <div class="col-4">
-                    <div class="row d-flex justify-content-end px-3">
-                        <p class="mb-0" id="cnt1">1</p>
-                        <div class="d-flex flex-column plus-minus"> <span class="vsm-text plus">+</span> <span class="vsm-text minus">-</span> </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <h6 class="mob-text">$9.99</h6>
-                </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-3">
+        <div class="card-body">
+
+          <a class="dark-grey-text d-flex justify-content-between" data-toggle="collapse" href="#collapseExample1"
+            aria-expanded="false" aria-controls="collapseExample1">
+            Add a discount code (optional)
+            <span><i class="fas fa-chevron-down pt-1"></i></span>
+          </a>
+
+          <div class="collapse" id="collapseExample1">
+            <div class="mt-3">
+              <div class="md-form md-outline mb-0">
+                <input type="text" id="discount-code1" class="form-control font-weight-light"
+                  placeholder="Enter discount code">
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <!-- Card -->
+
     </div>
-    <div class="row d-flex justify-content-center border-top">
-        <div class="col-5">
-            <div class="row d-flex">
-                <div class="book"> <img src="https://i.imgur.com/Oj1iQUX.jpg" class="book-img"> </div>
-                <div class="my-auto flex-column d-flex pad-left">
-                    <h6 class="mob-text">Homo Deus: A Brief<br>History of Tomorrow</h6>
-                    <p class="mob-text">Yuval Noah Harari</p>
-                </div>
-            </div>
-        </div>
-        <div class="my-auto col-7">
-            <div class="row text-right">
-                <div class="col-4">
-                    <p class="mob-text">Paperback</p>
-                </div>
-                <div class="col-4">
-                    <div class="row d-flex justify-content-end px-3">
-                        <p class="mb-0" id="cnt2">1</p>
-                        <div class="d-flex flex-column plus-minus"> <span class="vsm-text plus">+</span> <span class="vsm-text minus">-</span> </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <h6 class="mob-text">$13.50</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="row">
-                    <div class="col-lg-3 radio-group">
-                        <div class="row d-flex px-3 radio"> <img class="pay" src="https://i.imgur.com/WIAP9Ku.jpg">
-                            <p class="my-auto">Credit Card</p>
-                        </div>
-                        <div class="row d-flex px-3 radio gray"> <img class="pay" src="https://i.imgur.com/OdxcctP.jpg">
-                            <p class="my-auto">Debit Card</p>
-                        </div>
-                        <div class="row d-flex px-3 radio gray mb-3"> <img class="pay" src="https://i.imgur.com/cMk1MtK.jpg">
-                            <p class="my-auto">PayPal</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="row px-2">
-                            <div class="form-group col-md-6"> <label class="form-control-label">Name on Card</label> <input type="text" id="cname" name="cname" placeholder="Johnny Doe"> </div>
-                            <div class="form-group col-md-6"> <label class="form-control-label">Card Number</label> <input type="text" id="cnum" name="cnum" placeholder="1111 2222 3333 4444"> </div>
-                        </div>
-                        <div class="row px-2">
-                            <div class="form-group col-md-6"> <label class="form-control-label">Expiration Date</label> <input type="text" id="exp" name="exp" placeholder="MM/YYYY"> </div>
-                            <div class="form-group col-md-6"> <label class="form-control-label">CVV</label> <input type="text" id="cvv" name="cvv" placeholder="***"> </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mt-2">
-                        <div class="row d-flex justify-content-between px-4">
-                            <p class="mb-1 text-left">Subtotal</p>
-                            <h6 class="mb-1 text-right">$23.49</h6>
-                        </div>
-                        <div class="row d-flex justify-content-between px-4">
-                            <p class="mb-1 text-left">Shipping</p>
-                            <h6 class="mb-1 text-right">$2.99</h6>
-                        </div>
-                        <div class="row d-flex justify-content-between px-4" id="tax">
-                            <p class="mb-1 text-left">Total (tax included)</p>
-                            <h6 class="mb-1 text-right">$26.48</h6>
-                        </div> <button class="btn-block btn-blue"> <span> <span id="checkout">Checkout</span> <span id="check-amt">$26.48</span> </span> </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+</section>
+<!--Section: Block Content-->
 <Footer/>
 </template>
 
@@ -291,28 +391,60 @@ export default {
         Header,
         Footer
     },
+    /*
+    data: {
+        //productId,
+        //price,
+        //itemsInCart
+    },
+    */
     methods:{
-        cartActions: function()
-        {
-          $(document).ready(function(){
-          
-          $('.radio-group .radio').click(function(){
-          $('.radio').addClass('gray');
-          $(this).removeClass('gray');
-          });
-          
-          $('.plus-minus .plus').click(function(){
-          var count = $(this).parent().prev().text();
-          $(this).parent().prev().html(Number(count) + 1);
-          });
-          
-          $('.plus-minus .minus').click(function(){
-          var count = $(this).parent().prev().text();
-          $(this).parent().prev().html(Number(count) - 1);
-          });
-          
-          });
-        }
+        /*
+increaseProductQuantity: function (product)  {
+  this.productId = $(product).parents('.product').get(0).id
+  this.price = $.grep(productsInCart, el => { return el.id == this.productId })[0].price;
+
+  $.each(storageData, (i, el) => {
+    if (el.id == this.productId) {
+      el.itemsNumber += 1
+      $(product).siblings('.quantity').val(el.itemsNumber);
+      $(`#${productId}`).find('.price').html(`$${(price * el.itemsNumber).toFixed(2)}`);
+      $(`#${productId}-dropdown`).find('.price').html(`$${(price * el.itemsNumber).toFixed(2)}`);
+    }
+  });
+
+  updateCart();
+},
+
+subtractProductQuantity: function (product)  {
+  this.productId = $(product).parents('.product').get(0).id
+  this.price = $.grep(productsInCart, el => { return el.id == this.productId })[0].price;
+  this.itemsInCart = $.grep(productsInCart, el => { return el.id == this.productId })[0].itemsNumber;
+
+  if (itemsInCart > 0 ) {
+    storageData.map( el => {
+      if (el.id == this.productId) {
+        el.itemsNumber -= 1
+        $(product).siblings('.quantity').val(el.itemsNumber)
+        $(`#${productId}`).find('.price').html(`$${(price * el.itemsNumber).toFixed(2)}`);
+        $(`#${productId}-dropdown`).find('.price').html(`$${(price * el.itemsNumber).toFixed(2)}`);
+      }
+    });
+
+    updateCart();
+  };
+},
+
+removeProduct: function (product)  {
+  this.productId = $(product).parents('.product').get(0).id
+
+  storageData = $.grep(storageData, (el, i) => {
+    return el.id != this.productId
+  });
+
+  updateCart();
+  updateProductList();
+}*/
     },
     created()
     {

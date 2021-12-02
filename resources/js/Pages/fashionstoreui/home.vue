@@ -20,6 +20,32 @@
 
 
 <!-- Start Banner Hero -->
+<!--<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://therichpost.com/wp-content/uploads/2021/05/banner_img_01.jpg" class="d-block w-100" alt="...">One
+    </div>
+    <div class="carousel-item">
+      <img src="https://therichpost.com/wp-content/uploads/2021/05/banner_img_02.jpg" class="d-block w-100" alt="...">Two
+    </div>
+    <div class="carousel-item">
+      <img src="https://therichpost.com/wp-content/uploads/2021/05/banner_img_03.jpg" class="d-block w-100" alt="...">Three
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>-->
 <div id="template-mo-jassa-hero-carousel" class="carousel slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">
       <li data-bs-target="#template-mo-jassa-hero-carousel" data-bs-slide-to="0" class="active"></li>
@@ -114,17 +140,17 @@
       <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"><img src="https://therichpost.com/wp-content/uploads/2021/05/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
           <h5 class="text-center mt-3 mb-3">Watches</h5>
-          <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+          <p class="text-center"><a href="/shop" class="btn btn-success">Go Shop</a></p>
       </div>
       <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"><img src="https://therichpost.com/wp-content/uploads/2021/05/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
           <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
-          <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+          <p class="text-center"><a href="/shop" class="btn btn-success">Go Shop</a></p>
       </div>
       <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"><img src="https://therichpost.com/wp-content/uploads/2021/05/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
           <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-          <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+          <p class="text-center"><a href="/shop" class="btn btn-success">Go Shop</a></p>
       </div>
   </div>
 </section>
@@ -147,9 +173,14 @@
       <div class="row">
           <div class="col-12 col-md-4 mb-4">
               <div class="card h-100">
-                  <a href="#">
-                      <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_01.jpg" class="card-img-top" alt="...">
-                  </a>
+                  <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_01.jpg" class="card-img-top" alt="...">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+                                        <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
+                                        <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                                    </ul>
+                                </div>
                   <div class="card-body">
                       <ul class="list-unstyled d-flex justify-content-between">
                           <li>
@@ -171,9 +202,14 @@
           </div>
           <div class="col-12 col-md-4 mb-4">
               <div class="card h-100">
-                  <a href="#">
-                      <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_02.jpg" class="card-img-top" alt="...">
-                  </a>
+                  <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_02.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul class="list-unstyled">
+                          <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
+                          <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
+                          <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                      </ul>
+                  </div>
                   <div class="card-body">
                       <ul class="list-unstyled d-flex justify-content-between">
                           <li>
@@ -195,9 +231,14 @@
           </div>
           <div class="col-12 col-md-4 mb-4">
               <div class="card h-100">
-                  <a href="#">
-                      <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_03.jpg" class="card-img-top" alt="...">
-                  </a>
+                  <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_03.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul class="list-unstyled">
+                          <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
+                          <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
+                          <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                      </ul>
+                  </div>
                   <div class="card-body">
                       <ul class="list-unstyled d-flex justify-content-between">
                           <li>
