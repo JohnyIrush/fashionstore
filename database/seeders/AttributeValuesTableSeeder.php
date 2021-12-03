@@ -18,6 +18,7 @@ class AttributeValuesTableSeeder extends Seeder
         
         $sizes = ['small', 'medium', 'large'];
         $colors = ['black', 'blue', 'red', 'orange'];
+        $gender = ['men', 'women'];
 
         foreach ($sizes as $size)
         {
@@ -33,6 +34,15 @@ class AttributeValuesTableSeeder extends Seeder
             AttributeValue::create([
                 'attribute_id'      =>  2,
                 'value'             =>  $color,
+                'price'             =>  null,
+            ]);
+        }
+
+        foreach ($gender as $sex)
+        {
+            AttributeValue::create([
+                'attribute_id'      =>  2,
+                'value'             =>  $sex,
                 'price'             =>  null,
             ]);
         }

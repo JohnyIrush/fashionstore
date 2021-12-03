@@ -28,6 +28,7 @@ class ProductFactory extends Factory
             'weight' => $this->faker->numberBetween(1, 20),
             'quantity' => $this->faker->numberBetween(1, 20),
             'slug' => $this->faker->realText(10),
+            'featured' =>  $this->faker->boolean(),
             'user_id' => function() {
                 return User::all()->random();
             },

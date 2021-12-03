@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Store;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Store\Products\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -11,11 +12,20 @@ class StoreController extends Controller
 {
     // Render Store Home Page
 
+    public $products;
+
+    public function __construct(ProductController $products)
+    {
+        $this->products = $products;
+    }
+
     public function home()
     {
         return Inertia::render('fashionstoreui/Home', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
+            'featured' => $this->products->featured(),
+            'categories' => $this->products->categories(),
         ]);
     }
 
@@ -26,6 +36,7 @@ class StoreController extends Controller
         return Inertia::render('fashionstoreui/Shop', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
+            'products' => $this->products->products()
         ]);
     }
 

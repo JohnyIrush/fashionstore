@@ -17,7 +17,10 @@ class DatabaseSeeder extends Seeder
             AttributesTableSeeder::class,
             AttributeValuesTableSeeder::class,
             CategoriesTableSeeder::class,
-            AttributeValueProductAttributeTableSeeder::class
+            AttributeValueProductAttributeTableSeeder::class,
+            CategoryTableSeeder::class,
+            ProductTableSeeder::class,
+            ProductImageTableSeeder::class
         ]);
     }
 }

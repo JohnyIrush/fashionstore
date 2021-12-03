@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
             $table->unsignedInteger('brand_id')->index();
             $table->string('sku');
             $table->string('name');
+            $table->boolean('hero')->default(0);
             $table->string('slug');
             $table->text('description')->nullable();
             $table->unsignedInteger('quantity');

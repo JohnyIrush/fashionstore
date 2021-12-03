@@ -25,13 +25,7 @@
           <div class="col-md-4 pt-5">
               <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
               <ul class="list-unstyled text-light footer-link-list">
-                  <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                  <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                  <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                  <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                  <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                  <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                  <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                  <li v-for="category in categories" :index="index"><a class="text-decoration-none" href="'/products/' + {{category.id}}">{{category.name}}</a></li>
               </ul>
           </div>
 
@@ -254,3 +248,30 @@ body, ul, li, p, a, label, input, div {
   @media (min-width: 1200px) {}
   
 </style>
+
+
+<script>
+export default {
+  props: {
+
+  },
+  data() {
+    return {
+      categories: {}
+    }
+  },
+  methods: {
+    fetchCategories: function()
+    {
+      axios.get('api/categories')
+      .then((response) => {
+        this.categories = response.data;
+        console.log(response);
+      })
+    }
+  },
+  created(){
+    this.fetchCategories();
+  }
+}
+</script>

@@ -26,6 +26,8 @@
             <div class="col-lg-3">
                 <h1 class="h2 pb-4">Categories</h1>
                 <ul class="list-unstyled templatemo-accordion">
+                     <li v-for="category in categories" :index="index"><a class="text-decoration-none" href="'/products/' + {{category.id}}">{{category.name}}</a></li>
+                    <!--
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
                             Gender
@@ -57,6 +59,7 @@
                             <li><a class="text-decoration-none" href="#">Sunglass</a></li>
                         </ul>
                     </li>
+                    -->
                 </ul>
             </div>
 
@@ -86,10 +89,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" v-for="product in products" :index="index">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="assets/img/shop_01.jpg">
+                                <img :src="'Images/Fashions/' +  product.images[0].thumbnail" class="card-img rounded-0 img-fluid featured-product-img" >
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -101,7 +104,7 @@
                             <div class="card-body">
                                 <a href="shop-single.html" class="h3 text-decoration-none">Oupidatat non</a>
                                 <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                    <li>M/L/X/XL</li>
+                                    <li></li>
                                     <li class="pt-2">
                                         <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
                                         <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
@@ -119,11 +122,11 @@
                                         <i class="text-muted fa fa-star"></i>
                                     </li>
                                 </ul>
-                                <p class="text-center mb-0">$250.00</p>
+                                <p class="text-center mb-0">{{product.price}}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!--<div class="col-md-4">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="assets/img/shop_02.jpg">
@@ -418,7 +421,7 @@
                                 <p class="text-center mb-0">$250.00</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div div="row">
                     <ul class="pagination pagination-lg justify-content-end">
@@ -545,15 +548,58 @@
 <Footer/>
 </template>
 
+<style  scoped>
+.featured-product-img {
+    /*float: left !important;*/
+    width:  100% !important;
+    height: 300px !important;
+    object-fit: cover !important;
+}
+
+</style>
+
+
 <script>
 
 import Header from './Partials/Header';
 import Footer from './Partials/Footer';
 
 export default {
+    props:{
+        products: Object
+    },
     components:{
         Header,
         Footer
     }
+,
+data() {
+    return {
+        categories: {},
+        products: {}
+    }
+},
+  methods: {
+    fetchCategories: function()
+    {
+      axios.get('api/categories')
+      .then((response) => {
+        this.categories = response.data;
+        console.log(response);
+      })
+    },
+    fetchProducts: function()
+    {
+      axios.get('api/products')
+      .then((response) => {
+        this.products = response.data;
+        console.log(response);
+      })
+    }
+  },
+  created(){
+    this.fetchCategories();
+    this.fetchProducts();
+  }
 }
 </script>
