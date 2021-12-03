@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Product extends Model
 {
@@ -13,7 +14,7 @@ class Product extends Model
 
     protected $fillable = [
         'brand_id', 'sku', 'name', 'slug', 'description', 'quantity',
-        'weight', 'price', 'sale_price', 'status', 'featured',
+        'weight', 'price', 'sale_price', 'status', 'featured','user_id'
     ];
 
     protected $casts = [
@@ -22,13 +23,23 @@ class Product extends Model
         'status'    =>  'boolean',
         'featured'  =>  'boolean'
     ];
-
+   
+    /*
     public function setNameAttribute($key, $value)
+    {
+        $this->setAttribute($this->attributes['name'],Str::slug($value) );
+        $this->attributes['name'] = $value;
+        $this->attributes['slug'] = Str::slug($value);
+    }
+     */
+    public function setFirstNameAttribute($value)
     {
         $this->attributes['name'] = $value;
         $this->attributes['slug'] = Str::slug($value);
     }
-
+    
+    
+    
     public function brand()
     {
         return $this->belongsTo(Brand::class);
