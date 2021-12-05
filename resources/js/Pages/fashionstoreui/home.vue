@@ -179,8 +179,8 @@
                   <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul class="list-unstyled">
                           <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
-                          <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
-                          <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                          <li><a class="btn btn-success text-white mt-2" href="/shop/product"><i class="far fa-eye"></i></a></li>
+                          <li><a href="#" v-on:click.prevent="addToCart(product.id)" class="btn btn-success text-white mt-2" ><i class="fas fa-cart-plus"></i></a></li>
                       </ul>
                   </div>
                   <div class="card-body">
@@ -208,8 +208,8 @@
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
-                                        <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                                        <li><a :href="'/shop/product/' + product.id" class="btn btn-success text-white mt-2"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="#"  v-on:click.prevent="addToCart(product.id)" class="btn btn-success text-white mt-2" ><i class="fas fa-cart-plus"></i></a></li>
                                     </ul>
                                 </div>
                   <div class="card-body">
@@ -241,70 +241,11 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-          <!--
-          <div class="col-12 col-md-4 mb-4">
-              <div class="card h-100">
-                  <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_02.jpg" class="card-img-top" alt="...">
-                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
-                          <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
-                          <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
-                          <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
-                      </ul>
-                  </div>
-                  <div class="card-body">
-                      <ul class="list-unstyled d-flex justify-content-between">
-                          <li>
-                              <i class="text-warning fa fa-star"></i>
-                              <i class="text-warning fa fa-star"></i>
-                              <i class="text-warning fa fa-star"></i>
-                              <i class="text-muted fa fa-star"></i>
-                              <i class="text-muted fa fa-star"></i>
-                          </li>
-                          <li class="text-muted text-right">$480.00</li>
-                      </ul>
-                      <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
-                      <p class="card-text">
-                        Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum
-                      </p>
-                      <p class="text-muted">Reviews (48)</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-12 col-md-4 mb-4">
-              <div class="card h-100">
-                  <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_03.jpg" class="card-img-top" alt="...">
-                  <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
-                          <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
-                          <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
-                          <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
-                      </ul>
-                  </div>
-                  <div class="card-body">
-                      <ul class="list-unstyled d-flex justify-content-between">
-                          <li>
-                              <i class="text-warning fa fa-star"></i>
-                              <i class="text-warning fa fa-star"></i>
-                              <i class="text-warning fa fa-star"></i>
-                              <i class="text-warning fa fa-star"></i>
-                              <i class="text-warning fa fa-star"></i>
-                          </li>
-                          <li class="text-muted text-right">$360.00</li>
-                      </ul>
-                      <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
-                      <p class="card-text">
-                        Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum.
-                      </p>
-                      <p class="text-muted">Reviews (74)</p>
-                  </div>
-              </div>
-          </div>
-          -->
       </div>
   </div>
 </section>
 <!-- End Featured Product -->
+<shoporcheckout />
 <Footer />
 </template>
 
@@ -513,6 +454,7 @@ body, ul, li, p, a, label, input, div {
     import { Head, Link } from '@inertiajs/inertia-vue3';
     import Header from './Partials/Header';
     import Footer from './Partials/Footer';
+    import shoporcheckout from './Partials/purchase/shoporcheckout'
     
 
     export default defineComponent({
@@ -520,7 +462,8 @@ body, ul, li, p, a, label, input, div {
             Head,
             Link,
             Header,
-            Footer
+            Footer,
+            shoporcheckout
         },
 
         props: {
@@ -545,10 +488,16 @@ body, ul, li, p, a, label, input, div {
               console.log(response);
               return response.data;
             })
+          },
+          addToCart: function(id)
+          {
+              axios.post('/add-to-cart/' + id)
+              .then((response)=>{
+                  $("#shop-check").modal("show");
+              })
           }
 
-        }
-        ,
+        },
         created(){
            this.featuredProducts = this.featured.original;
           //console.log(this.featured.original[0].images);

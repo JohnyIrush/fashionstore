@@ -36,7 +36,7 @@ class StoreController extends Controller
         return Inertia::render('fashionstoreui/Shop', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
-            'products' => $this->products->products()
+            'products' =>  $this->products->products()
         ]);
     }
 
@@ -73,11 +73,25 @@ class StoreController extends Controller
 
     // Render Single Shop Product
 
-    public function shopProduct()
+    public function shopProduct($id)
     {
+        #dd("hit");
         return Inertia::render('fashionstoreui/Partials/Product', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
+            'product' =>  $this->products->product($id)
         ]);
+    }
+
+    //-- Authentication status
+
+    public function authenticationStatus(Request $request)
+    {
+        return response()->json(
+            [
+            'canLogin' => Route::has('login'),
+            'canRegister' => Route::has('register'),
+            ]
+            ,200);
     }
 }

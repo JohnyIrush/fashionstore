@@ -16,9 +16,14 @@ class ProductController extends Controller
 
     public function productsByCategory($id)
     {
-        return Product::whereHas("categories", function ($query) use ($id) {
-            $query->where('category_id', $id);
-        })->get();
+        return response()->json(
+            Product::whereHas("categories", function ($query) use ($id) {
+                $query->where('category_id', $id);
+            })
+            ->with("images")
+            ->get(),
+            200
+        );
     }
 
     public function featured()
@@ -66,7 +71,16 @@ class ProductController extends Controller
 
     public function products()
     {
-        return response()->json(Product::all(),200);
+        return response()->json(Product::with("images")
+                                       ->get(),200);
+    }
+
+
+    public function product($id)
+    {
+        return response()->json(Product::with(["images","brand","categories"])
+                                       ->where("id", $id)
+                                       ->get(),200);
     }
 
 

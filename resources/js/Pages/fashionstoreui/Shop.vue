@@ -20,13 +20,15 @@
 
 
     <!-- Start Content -->
-    <div class="container py-5">
+    <div @productsbyategory="test" class="container py-5">
         <div class="row">
 
             <div class="col-lg-3">
                 <h1 class="h2 pb-4">Categories</h1>
                 <ul class="list-unstyled templatemo-accordion">
-                     <li v-for="category in categories" :index="index"><a class="text-decoration-none" href="'/products/' + {{category.id}}">{{category.name}}</a></li>
+                     <li v-for="category in categories" :index="index">
+                         <a v-on:click.prevent="fetchProducts(category.id)"  class="text-decoration-none" >{{category.name}}</a>
+                     </li>
                     <!--
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
@@ -96,13 +98,17 @@
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
-                                        <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                                        <li><a :href="'/shop/product/' + product.id" class="btn btn-success text-white mt-2"><i class="far fa-eye"></i></a></li>
+                                        <li>
+                                          <a role="button" v-on:click.prevent="addToCart(product.id)" type="button" class="btn btn-success text-white mt-2" >
+                                            <i class="fas fa-cart-plus"></i>
+                                          </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <a href="shop-single.html" class="h3 text-decoration-none">Oupidatat non</a>
+                                <a href="shop-single.html" class="h3 text-decoration-none">{{ product.name }}</a>
                                 <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                                     <li></li>
                                     <li class="pt-2">
@@ -545,6 +551,7 @@
         </div>
     </section>
     <!--End Brands-->
+    <shoporcheckout />
 <Footer/>
 </template>
 
@@ -563,14 +570,16 @@
 
 import Header from './Partials/Header';
 import Footer from './Partials/Footer';
+import shoporcheckout from './Partials/purchase/shoporcheckout'
 
 export default {
     props:{
-        products: Object
+
     },
     components:{
         Header,
-        Footer
+        Footer,
+        shoporcheckout
     }
 ,
 data() {
@@ -585,21 +594,45 @@ data() {
       axios.get('api/categories')
       .then((response) => {
         this.categories = response.data;
-        console.log(response);
+        // console.log(response);
       })
     },
-    fetchProducts: function()
+    fetchProducts: function(id)
     {
-      axios.get('api/products')
+    /*this.bus.$on("products-by-category",(products)=>{
+            alert("products-by-category");
+            this.products = products;
+            return;
+        });*/
+        
+      axios.get('api/products/' + id)
       .then((response) => {
         this.products = response.data;
-        console.log(response);
+        //console.log(response);
       })
+    },
+    getProductsByCategory: function(id)
+    {
+      axios.get('api/products/' + id)
+      .then((response) => {
+        // console.log(response);
+        // this.products = response.data;
+        this.$emit("productsbyategory", response.data);
+
+      })
+    },
+    addToCart: function(id)
+    {
+        axios.post('/add-to-cart/' + id)
+        .then((response)=>{
+            $("#shop-check").modal("show");
+        })
     }
   },
   created(){
     this.fetchCategories();
-    this.fetchProducts();
+    this.fetchProducts(1);
+
   }
 }
 </script>

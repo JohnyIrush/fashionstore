@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Store\Products\ProductController;
+use App\Http\Controllers\Store\Products\PurchaseController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -29,3 +30,4 @@ Route::get('/product/{id}/reviews/total', [ProductController::class,'productTota
 Route::get('/product/{id}/rating', [ProductController::class,'productRating']); // calculate product rating
 Route::get('/product/{id}/attributes', [ProductController::class,'productAttribute']); // calculate product rating
 Route::get('/products', [ProductController::class,'products']); // fetch products
+Route::get('/product/{id}', [ProductController::class,'product']); // fetch a single product

@@ -77,7 +77,7 @@
               </a>
               <a class="nav-icon position-relative text-decoration-none" href="/cart">
                   <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                  <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                  <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">{{cartTotalQuantity}}</span>
               </a>
               <!--<a class="nav-icon position-relative text-decoration-none" href="#">
                   <i class="fa fa-fw fa-user text-dark mr-3"></i>
@@ -90,6 +90,44 @@
 </nav>
 <!-- Close Header -->   
 </template>
+
+<script>
+export default {
+    props:
+    {
+    },
+    data() {
+        return {
+            cartTotalQuantity: {},
+            canLogin: Boolean,
+            canRegister: Boolean,
+        }
+    },
+    methods: {
+    cartQuantity: function()
+    {  
+      axios.post('/cart-quantity')
+      .then((response) => {
+        this.cartTotalQuantity = response.data.totalQty;
+      })
+    },
+    fetchAuthenticationState: function()
+    {
+      axios.post('/authentication-status')
+      .then((response) => {
+        this.canLogin = response.data.canLogin;
+        this.canRegister = response.data.canRegister;
+        console.log(this.canLogin + ' ' + this.canRegister );
+      })
+    }
+    },
+    created()
+    {
+        this.cartQuantity();
+        this.fetchAuthenticationState();
+    }
+}
+</script>
 
 <style scoped>
 

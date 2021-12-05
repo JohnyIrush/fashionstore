@@ -263,7 +263,7 @@ export default {
   methods: {
     fetchCategories: function()
     {
-      axios.get('api/categories')
+      axios.get('/api/categories')
       .then((response) => {
         this.categories = response.data;
         console.log(response);

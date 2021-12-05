@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Store\Products\PurchaseController;
 use App\Http\Controllers\Store\StoreController;
+use Illuminate\Contracts\Cache\Store;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -40,6 +42,7 @@ Route::get('inertia-welcome', function(){
 });
 
 */
+
 // Store UI Routes
 
 Route::get('/', [StoreController::class, 'home']);
@@ -47,4 +50,18 @@ Route::get('/shop', [StoreController::class, 'shop']);
 Route::get('/about', [StoreController::class, 'about']);
 Route::get('/contact', [StoreController::class, 'contact']);
 Route::get('/cart', [StoreController::class, 'cart']);
-Route::get('/shop/product', [StoreController::class, 'shopProduct']);
+Route::get('/shop/product/{id}', [StoreController::class, 'shopProduct']);
+
+// Product Purchase routes
+
+Route::post('add-to-cart/{id}',[PurchaseController::class,'addtocart']);
+Route::post('cart-quantity',[PurchaseController::class,'cartQuantity']);
+Route::post('cart-items',[PurchaseController::class,'cartItems']);
+
+// Fetch authentication status
+
+Route::post('authentication-status',[StoreController::class,'authenticationStatus']);
+
+//-- cart Actions
+Route::get('/remove/{id}',[PurchaseController::class, 'removeItem']);
+Route::get('/reduce/{id}',[PurchaseController::class,'reduceProductByOne']);
