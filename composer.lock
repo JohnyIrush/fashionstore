@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0cc7d68889e40c9fb9126161268d9826",
+    "content-hash": "a7b017309cb6b8f2b744e1c3438ecebc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3463,6 +3463,54 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "softwarescares/safaricomdaraja",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JohnyIrush/softwarescares-safaricomdaraja.git",
+                "reference": "7c2a7ac89f26ea7a390134ce19a464e56b64a326"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JohnyIrush/softwarescares-safaricomdaraja/zipball/7c2a7ac89f26ea7a390134ce19a464e56b64a326",
+                "reference": "7c2a7ac89f26ea7a390134ce19a464e56b64a326",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Softwarescares\\Safaricomdaraja\\app\\Providers\\DarajaServiceProvider",
+                        "Softwarescares\\Safaricomdaraja\\app\\Providers\\DarajaTransactionProvider",
+                        "Softwarescares\\Safaricomdaraja\\app\\Providers\\DarajaEventServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Softwarescares\\Safaricomdaraja\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Irungu",
+                    "email": "johnydanxin@gmail.com"
+                }
+            ],
+            "description": "Safaricom daraja api integration for accessing mpesa services",
+            "support": {
+                "issues": "https://github.com/JohnyIrush/softwarescares-safaricomdaraja/issues",
+                "source": "https://github.com/JohnyIrush/softwarescares-safaricomdaraja/tree/main"
+            },
+            "time": "2021-12-01T14:16:37+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -8623,7 +8671,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "softwarescares/safaricomdaraja": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

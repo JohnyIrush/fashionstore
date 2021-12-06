@@ -13,6 +13,7 @@
         "laravel/jetstream": "^2.4",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
+        "softwarescares/safaricomdaraja": "dev-main",
         "tightenco/ziggy": "^1.0",
         "typicms/nestablecollection": "^1.1"
     },
