@@ -81,10 +81,10 @@ class PurchaseController extends Controller
     }
 
     public function checkout(){
-        if (!Session::has('cart')) {
-            return view('shop.pages.cart');
+        if (!session('cart')) {
+            return response()->redirect('/shop');
         }
-        $oldCart = Session::get('cart');
+        $oldCart = session('cart');
         $cart = new Cart($oldCart);
         $total = $cart->totalPrice;
         return view('shop.pages.stripe',[
@@ -169,6 +169,19 @@ class PurchaseController extends Controller
 
             return response()->json(session('cart'), 200);
             
+        }
+
+        public function orders()
+        {
+            $orders= Auth::user()->orders;
+            $unserialisedorders = [];
+
+            foreach ($orders as $order) {
+                $order->order =  unserialize($order->order);
+                array_push($unserialisedorders, $order);
+            }
+
+            return $unserialisedorders;
         }
         
     }

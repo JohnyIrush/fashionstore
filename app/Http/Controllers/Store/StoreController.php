@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Store;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Gateways\Stripe\StripeController;
 use App\Http\Controllers\Store\Products\ProductController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -13,11 +15,12 @@ class StoreController extends Controller
     // Render Store Home Page
 
     public $products;
+    public $stripe;
 
-    public function __construct(ProductController $products)
+    public function __construct(ProductController $products, StripeController $stripe)
     {
         $this->products = $products;
-    }
+        $this->stripe = $stripe;    }
 
     public function home()
     {
@@ -94,4 +97,26 @@ class StoreController extends Controller
             ]
             ,200);
     }
+
+    public function authenticatedUser(Request $request)
+    {
+        return response()->json(
+            Auth::user()
+            ,200);
+    }
+
+    public function payment()
+    {
+        return Inertia::render('fashionstoreui/Partials/purchase/Payment', [
+            'intent' => $this->stripe->createSetupIntent()
+        ]);
+    }
+
+    public function stripePayment()
+    {
+        return view('payment.stripe', [
+            'intent' => $this->stripe->createSetupIntent()
+        ]);
+    }
+
 }

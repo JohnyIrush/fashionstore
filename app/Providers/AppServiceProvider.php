@@ -25,5 +25,15 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+
+        //-- Tax Configuration
+        # Cashier::calculateTaxes();
+
+        //-- Using Custom Models
+
+        /*
+          Cashier::useSubscriptionModel(Subscription::class);
+          Cashier::useSubscriptionItemModel(SubscriptionItem::class);
+        */
     }
 }

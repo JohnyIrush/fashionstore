@@ -2,7 +2,7 @@
 <Header/>
 <!--Section: Block Content-->
 <section>
-   <div v-if="cartTotalQuantity == 0" class="card-header">
+   <div v-if="!cartTotalQuantity" class="card-header">
      <div class="card cart-height">
       <div class="row">
           <div class="col-sm-12 mr-1 cart-items" >
@@ -152,24 +152,27 @@
       <!-- Card -->
 
       <!-- Card -->
-      <div class="card mb-3">
+      <div id="select-payment-method" class="card mb-3">
+        <form id="payment-method-selector" @submit.prevent="selectPaymentMethod()" >
         <div class="card-body">
 
           <h5 class="mb-4">We accept</h5>
 
-          <img class="mr-2" width=""
-            src=""
-            alt="Visa">
-          <img class="mr-2" width=""
-            src=""
-            alt="American Express">
-          <img class="mr-2" width=""
-            src=""
-            alt="Mastercard">
-          <img class="mr-2" width=""
-            src=""
-            alt="PayPal acceptance mark">
+          <div class="form-check form-switch">
+            <input class="form-check-input" name="payment-method" type="radio" id="mpesa-express" value="mpesa">
+            <label class="form-check-label" for="mpesa-express"> <img src="/Images/mpesa.png" alt="Lipa Na Mpesa"> </label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" name="payment-method" type="radio" id="stripe" value="stripe" >
+            <label class="form-check-label" for="stripe"> <i class="fab fa-stripe fa-3x" style="color: purple;"></i> </label>
+          </div>
         </div>
+        <div class="card-footer">
+            <div class="row justify-content-end">
+                <button type="submit" class="btn btn-primary text-white col-sm-4 btn-lg"> Proceed To Payment</button>
+            </div>
+        </div>
+        </form>
       </div>
       <!-- Card -->
 
@@ -205,7 +208,7 @@
             </li>
           </ul>
 
-          <button type="button" class="btn btn-primary btn-block waves-effect waves-light">go to checkout</button>
+          <a href="#select-payment-method" type="button" class="btn btn-primary btn-lg btn-block waves-effect waves-light">Select Payment Method</a>
 
         </div>
       </div>
@@ -428,6 +431,8 @@ export default {
       axios.post('/cart-quantity')
       .then((response) => {
         this.cartTotalQuantity = response.data.totalQty;
+        console.log('cartTotalQuantity' );
+        console.log(this.cartTotalQuantity );
       })
     },
     fetchCartItems: function()
@@ -463,6 +468,22 @@ export default {
             this.cartQuantity();
           })
       },
+      selectPaymentMethod: function()
+      {
+        localStorage.paymentMethod = $("input[type='radio'][name='payment-method']:checked").val();
+        if($("input[type='radio'][name='payment-method']:checked").val() == 'mpesa')
+        {
+          location.replace("/payment");
+        }else if($("input[type='radio'][name='payment-method']:checked").val() == 'stripe')
+        {
+          location.replace("/payment");
+        }
+        
+        /*
+       if (document.getElementById('r1').checked) {
+         rate_value = document.getElementById('r1').value;
+       }*/
+      }
   },
     created()
     {

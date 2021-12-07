@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Gateways\Stripe\StripeController;
 use App\Http\Controllers\Store\Products\PurchaseController;
 use App\Http\Controllers\Store\StoreController;
 use Illuminate\Contracts\Cache\Store;
@@ -65,3 +66,19 @@ Route::post('authentication-status',[StoreController::class,'authenticationStatu
 //-- cart Actions
 Route::get('/remove/{id}',[PurchaseController::class, 'removeItem']);
 Route::get('/reduce/{id}',[PurchaseController::class,'reduceProductByOne']);
+
+//-- Payment Confirmation
+
+Route::post('/auth-user', [StoreController::class, 'authenticatedUser']);
+Route::get('/payment', [StoreController::class, 'payment']);
+Route::get('/payment/stripe', [StoreController::class, 'stripePayment']);
+
+
+//-- User Orders
+
+Route::get('/orders', [PurchaseController::class, 'orders']);
+
+//-- Stripe payment Configuration
+
+Route::post('/add-payment-method', [StripeController::class, 'addPaymentMethod']);
+Route::post('/stripe/checkout', [StripeController::class, 'checkout']);
