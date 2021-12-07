@@ -2643,3 +2643,33 @@ select {
 	}
 }
 
+.main-theme-bg-color{
+	background: rgb(58,5,126) !important;
+	background: linear-gradient(90deg, rgba(58,5,126,1) 6%, rgba(190,7,163,1) 52%, rgba(9,19,121,1) 92%) !important;
+}
+
+.main-theme-sec-bg-color{
+	background: rgb(0,1,17) !important;
+	background: linear-gradient(90deg, rgba(0,1,17,1) 2%, rgba(0,0,19,1) 95%, rgba(2,2,45,1) 100%) !important;
+}
+
+.main-theme-tertiary-bg-color{
+	background: rgb(3,3,24) !important;
+	background: radial-gradient(circle, rgba(3,3,24,0.8547794117647058) 68%, rgba(2,2,33,0.6755077030812324) 95%) !important;
+}
+
+.text-secondary-color{
+	color: rgb(77, 5, 77) !important;
+}
+
+.elements-bg-secondary-color{
+	background: rgb(77, 5, 77) !important;
+}
+
+.elements-bg-secondary-second-color{
+	background: rgb(231, 21, 161) !important;
+}
+
+.elements-text-secondary-second-color{
+	color: rgb(231, 21, 161) !important;
+}

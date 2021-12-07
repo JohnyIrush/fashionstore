@@ -28362,7 +28362,11 @@ var _withScopeId = function _withScopeId(n) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-b212ca50"), n = n(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)(), n;
 };
 
-var _hoisted_1 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_1 = {
+  "class": "main-theme-tertiary-bg-color"
+};
+
+var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "modal fade bg-white",
     id: "templatemo_search",
@@ -28402,144 +28406,50 @@ var _hoisted_1 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    id: "template-mo-jassa-hero-carousel",
-    "class": "carousel slide",
-    "data-bs-ride": "carousel"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ol", {
-    "class": "carousel-indicators"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
-    "data-bs-target": "#template-mo-jassa-hero-carousel",
-    "data-bs-slide-to": "0",
-    "class": "active"
-  }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
-    "data-bs-target": "#template-mo-jassa-hero-carousel",
-    "data-bs-slide-to": "1"
-  }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
-    "data-bs-target": "#template-mo-jassa-hero-carousel",
-    "data-bs-slide-to": "2"
-  })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "carousel-inner"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "carousel-item active"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "container"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "row p-5"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "mx-auto col-md-8 col-lg-6 order-lg-last"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    "class": "img-fluid",
-    src: "https://therichpost.com/wp-content/uploads/2021/05/banner_img_01.jpg",
-    alt: ""
-  })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "col-lg-6 mb-0 d-flex align-items-center"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "text-align-left align-self-center"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-    "class": "h1 text-success"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, "Jassa"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" eCommerce")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
-    "class": "h2"
-  }, "Lorem Ipsum Lorem Ipsum"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ")])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "carousel-item"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "container"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "row p-5"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "mx-auto col-md-8 col-lg-6 order-lg-last"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    "class": "img-fluid",
-    src: "https://therichpost.com/wp-content/uploads/2021/05/banner_img_02.jpg",
-    alt: ""
-  })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "col-lg-6 mb-0 d-flex align-items-center"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "text-align-left"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-    "class": "h1"
-  }, "Lorem Ipsum"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
-    "class": "h2"
-  }, "Lorem Ipsum Lorem Ipsum"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ")])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "carousel-item"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "container"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "row p-5"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "mx-auto col-md-8 col-lg-6 order-lg-last"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    "class": "img-fluid",
-    src: "https://therichpost.com/wp-content/uploads/2021/05/banner_img_03.jpg",
-    alt: ""
-  })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "col-lg-6 mb-0 d-flex align-items-center"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "text-align-left"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-    "class": "h1"
-  }, "Lorem Ipsum"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
-    "class": "h2"
-  }, "Lorem Ipsum Lorem Ipsum "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ")])])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": "carousel-control-prev text-decoration-none w-auto ps-3",
-    href: "#template-mo-jassa-hero-carousel",
-    role: "button",
-    "data-bs-slide": "prev"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "fas fa-chevron-left"
-  })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": "carousel-control-next text-decoration-none w-auto pe-3",
-    href: "#template-mo-jassa-hero-carousel",
-    role: "button",
-    "data-bs-slide": "next"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "fas fa-chevron-right"
-  })])], -1
-  /* HOISTED */
-  );
-});
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div id=\"template-mo-jassa-hero-carousel\" class=\"carousel slide\" data-bs-ride=\"carousel\" data-v-b212ca50><ol class=\"carousel-indicators\" data-v-b212ca50><li data-bs-target=\"#template-mo-jassa-hero-carousel\" data-bs-slide-to=\"0\" class=\"active elements-bg-secondary-color\" data-v-b212ca50></li><li class=\"elements-bg-secondary-color\" data-bs-target=\"#template-mo-jassa-hero-carousel\" data-bs-slide-to=\"1\" data-v-b212ca50></li><li class=\"elements-bg-secondary-color\" data-bs-target=\"#template-mo-jassa-hero-carousel\" data-bs-slide-to=\"2\" data-v-b212ca50></li></ol><div class=\"carousel-inner\" data-v-b212ca50><div class=\"carousel-item active main-theme-tertiary-bg-color\" data-v-b212ca50><div class=\"container\" data-v-b212ca50><div class=\"row p-5\" data-v-b212ca50><div class=\"mx-auto col-md-8 col-lg-6 order-lg-last\" data-v-b212ca50><img class=\"img-fluid\" src=\"https://therichpost.com/wp-content/uploads/2021/05/banner_img_01.jpg\" alt=\"\" data-v-b212ca50></div><div class=\"col-lg-6 mb-0 d-flex align-items-center main-theme-sec-bg-color\" data-v-b212ca50><div class=\"text-align-left align-self-center\" data-v-b212ca50><h1 class=\"h1 text-white\" data-v-b212ca50><b data-v-b212ca50>Fashionstore</b> eCommerce</h1><h3 class=\"h2 text-white\" data-v-b212ca50>Lorem Ipsum Lorem Ipsum</h3><p class=\"text-white\" data-v-b212ca50> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p></div></div></div></div></div><div class=\"carousel-item main-theme-tertiary-bg-color\" data-v-b212ca50><div class=\"container\" data-v-b212ca50><div class=\"row p-5\" data-v-b212ca50><div class=\"mx-auto col-md-8 col-lg-6 order-lg-last\" data-v-b212ca50><img class=\"img-fluid\" src=\"https://therichpost.com/wp-content/uploads/2021/05/banner_img_02.jpg\" alt=\"\" data-v-b212ca50></div><div class=\"col-lg-6 mb-0 d-flex align-items-center main-theme-sec-bg-color\" data-v-b212ca50><div class=\"text-align-left\" data-v-b212ca50><h1 class=\"h1 text-white\" data-v-b212ca50>Lorem Ipsum</h1><h3 class=\"h2 text-white\" data-v-b212ca50>Lorem Ipsum Lorem Ipsum</h3><p class=\"text-white\" data-v-b212ca50> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p></div></div></div></div></div><div class=\"carousel-item main-theme-tertiary-bg-color\" data-v-b212ca50><div class=\"container\" data-v-b212ca50><div class=\"row p-5\" data-v-b212ca50><div class=\"mx-auto col-md-8 col-lg-6 order-lg-last\" data-v-b212ca50><img class=\"img-fluid\" src=\"https://therichpost.com/wp-content/uploads/2021/05/banner_img_03.jpg\" alt=\"\" data-v-b212ca50></div><div class=\"col-lg-6 mb-0 d-flex align-items-center main-theme-sec-bg-color\" data-v-b212ca50><div class=\"text-align-left\" data-v-b212ca50><h1 class=\"h1 text-white\" data-v-b212ca50>Lorem Ipsum</h1><h3 class=\"h2 text-white\" data-v-b212ca50>Lorem Ipsum Lorem Ipsum </h3><p class=\"text-white\" data-v-b212ca50> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p></div></div></div></div></div></div><button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#template-mo-jassa-hero-carousel\" data-bs-slide=\"prev\" data-v-b212ca50><span class=\"carousel-control-prev-icon text-secondary-color elements-bg-secondary-color\" aria-hidden=\"true\" data-v-b212ca50></span><span class=\"visually-hidden\" data-v-b212ca50>Previous</span></button><button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#template-mo-jassa-hero-carousel\" data-bs-slide=\"next\" data-v-b212ca50><span class=\"carousel-control-next-icon text-secondary-color elements-bg-secondary-color\" aria-hidden=\"true\" data-v-b212ca50></span><span class=\"visually-hidden\" data-v-b212ca50>Next</span></button></div>", 1);
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"container py-5\" data-v-b212ca50><div class=\"row text-center pt-3\" data-v-b212ca50><div class=\"col-lg-6 m-auto\" data-v-b212ca50><h1 class=\"h1\" data-v-b212ca50>Categories of The Month</h1><p data-v-b212ca50> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p></div></div><div class=\"row\" data-v-b212ca50><div class=\"col-12 col-md-4 p-5 mt-3\" data-v-b212ca50><a href=\"#\" data-v-b212ca50><img src=\"https://therichpost.com/wp-content/uploads/2021/05/category_img_01.jpg\" class=\"rounded-circle img-fluid border\" data-v-b212ca50></a><h5 class=\"text-center mt-3 mb-3\" data-v-b212ca50>Watches</h5><p class=\"text-center\" data-v-b212ca50><a href=\"/shop\" class=\"btn btn-success\" data-v-b212ca50>Go Shop</a></p></div><div class=\"col-12 col-md-4 p-5 mt-3\" data-v-b212ca50><a href=\"#\" data-v-b212ca50><img src=\"https://therichpost.com/wp-content/uploads/2021/05/category_img_02.jpg\" class=\"rounded-circle img-fluid border\" data-v-b212ca50></a><h2 class=\"h5 text-center mt-3 mb-3\" data-v-b212ca50>Shoes</h2><p class=\"text-center\" data-v-b212ca50><a href=\"/shop\" class=\"btn btn-success\" data-v-b212ca50>Go Shop</a></p></div><div class=\"col-12 col-md-4 p-5 mt-3\" data-v-b212ca50><a href=\"#\" data-v-b212ca50><img src=\"https://therichpost.com/wp-content/uploads/2021/05/category_img_03.jpg\" class=\"rounded-circle img-fluid border\" data-v-b212ca50></a><h2 class=\"h5 text-center mt-3 mb-3\" data-v-b212ca50>Accessories</h2><p class=\"text-center\" data-v-b212ca50><a href=\"/shop\" class=\"btn btn-success\" data-v-b212ca50>Go Shop</a></p></div></div></section>", 1);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"container py-5 main-theme-sec-bg-color text-white\" data-v-b212ca50><div class=\"row text-center pt-3\" data-v-b212ca50><div class=\"col-lg-6 m-auto\" data-v-b212ca50><h1 class=\"h1\" data-v-b212ca50>Categories of The Month</h1><p data-v-b212ca50> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p></div></div><div class=\"row\" data-v-b212ca50><div class=\"col-12 col-md-4 p-5 mt-3\" data-v-b212ca50><a href=\"#\" data-v-b212ca50><img src=\"https://therichpost.com/wp-content/uploads/2021/05/category_img_01.jpg\" class=\"rounded-circle img-fluid border\" data-v-b212ca50></a><h5 class=\"text-center mt-3 mb-3\" data-v-b212ca50>Watches</h5><p class=\"text-center\" data-v-b212ca50><a href=\"/shop\" class=\"btn main-theme-bg-color text-white\" data-v-b212ca50>Go Shop</a></p></div><div class=\"col-12 col-md-4 p-5 mt-3\" data-v-b212ca50><a href=\"#\" data-v-b212ca50><img src=\"https://therichpost.com/wp-content/uploads/2021/05/category_img_02.jpg\" class=\"rounded-circle img-fluid border\" data-v-b212ca50></a><h2 class=\"h5 text-center mt-3 mb-3\" data-v-b212ca50>Shoes</h2><p class=\"text-center\" data-v-b212ca50><a href=\"/shop\" class=\"btn main-theme-bg-color text-white\" data-v-b212ca50>Go Shop</a></p></div><div class=\"col-12 col-md-4 p-5 mt-3\" data-v-b212ca50><a href=\"#\" data-v-b212ca50><img src=\"https://therichpost.com/wp-content/uploads/2021/05/category_img_03.jpg\" class=\"rounded-circle img-fluid border\" data-v-b212ca50></a><h2 class=\"h5 text-center mt-3 mb-3\" data-v-b212ca50>Accessories</h2><p class=\"text-center\" data-v-b212ca50><a href=\"/shop\" class=\"btn main-theme-bg-color text-white\" data-v-b212ca50>Go Shop</a></p></div></div></section>", 1);
 
-var _hoisted_4 = {
-  "class": "bg-light"
-};
 var _hoisted_5 = {
+  "class": ""
+};
+var _hoisted_6 = {
   "class": "container py-5"
 };
 
-var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_7 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "row text-center py-3"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "col-lg-6 m-auto"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-    "class": "h1"
-  }, "Featured Product"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ")])], -1
+    "class": "h1 text-white"
+  }, "Featured Product"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-white"
+  }, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ")])], -1
   /* HOISTED */
   );
 });
 
-var _hoisted_7 = {
+var _hoisted_8 = {
   "class": "row"
 };
-var _hoisted_8 = {
+var _hoisted_9 = {
   id: "featured-products-carouselControls",
   "class": "carousel slide",
   "data-bs-ride": "carousel"
 };
-var _hoisted_9 = {
+var _hoisted_10 = {
   "class": "carousel-inner featured-carousel-inner"
 };
-var _hoisted_10 = {
+var _hoisted_11 = {
   "class": "col-12 col-md-4 mb-4 carousel-item featured-carousel-item active"
 };
-var _hoisted_11 = {
+var _hoisted_12 = {
   "class": "card h-100"
 };
 
-var _hoisted_12 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_13 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     src: "https://therichpost.com/wp-content/uploads/2021/05/feature_prod_02.jpg",
     "class": "card-img-top",
@@ -28549,36 +28459,36 @@ var _hoisted_12 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_13 = {
+var _hoisted_14 = {
   "class": "card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
 };
-var _hoisted_14 = {
+var _hoisted_15 = {
   "class": "list-unstyled"
 };
 
-var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": "btn btn-success text-white",
-    href: "shop-single.html"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "far fa-heart"
-  })])], -1
-  /* HOISTED */
-  );
-});
-
 var _hoisted_16 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": "btn btn-success text-white mt-2",
-    href: "/shop/product"
+    "class": "btn elements-bg-secondary-color text-white",
+    href: "#"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "far fa-eye"
+    "class": "far fa-heart"
   })])], -1
   /* HOISTED */
   );
 });
 
 var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "'/shop/product/1",
+    "class": "btn elements-bg-secondary-color text-white mt-2"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "far fa-eye"
+  })])], -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-cart-plus"
   }, null, -1
@@ -28586,26 +28496,26 @@ var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_18 = [_hoisted_17];
+var _hoisted_19 = [_hoisted_18];
 
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"card-body\" data-v-b212ca50><ul class=\"list-unstyled d-flex justify-content-between\" data-v-b212ca50><li data-v-b212ca50><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-muted fa fa-star\" data-v-b212ca50></i><i class=\"text-muted fa fa-star\" data-v-b212ca50></i></li><li class=\"text-muted text-right\" data-v-b212ca50>$480.00</li></ul><a href=\"#\" class=\"h2 text-decoration-none text-dark\" data-v-b212ca50>Lorem Ipsum</a><p class=\"card-text\" data-v-b212ca50> Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum </p><p class=\"text-muted\" data-v-b212ca50>Reviews (48)</p></div>", 1);
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"card-body main-theme-sec-bg-color\" data-v-b212ca50><ul class=\"list-unstyled d-flex justify-content-between\" data-v-b212ca50><li data-v-b212ca50><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-muted fa fa-star\" data-v-b212ca50></i><i class=\"text-muted fa fa-star\" data-v-b212ca50></i></li><li class=\"text-white text-right\" data-v-b212ca50>$480.00</li></ul><a href=\"#\" class=\"h2 text-decoration-none text-white\" data-v-b212ca50>Lorem Ipsum</a><p class=\"card-text text-white\" data-v-b212ca50> Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum </p><p class=\"text-white\" data-v-b212ca50>Reviews (48)</p></div>", 1);
 
-var _hoisted_20 = ["index"];
-var _hoisted_21 = {
+var _hoisted_21 = ["index"];
+var _hoisted_22 = {
   "class": "card h-100 featured-card"
 };
-var _hoisted_22 = ["src"];
-var _hoisted_23 = {
+var _hoisted_23 = ["src"];
+var _hoisted_24 = {
   "class": "card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
 };
-var _hoisted_24 = {
+var _hoisted_25 = {
   "class": "list-unstyled"
 };
 
-var _hoisted_25 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_26 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": "btn btn-success text-white",
-    href: "shop-single.html"
+    "class": "btn elements-bg-secondary-color text-white",
+    href: "#"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "far fa-heart"
   })])], -1
@@ -28613,9 +28523,9 @@ var _hoisted_25 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_26 = ["href"];
+var _hoisted_27 = ["href"];
 
-var _hoisted_27 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_28 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "far fa-eye"
   }, null, -1
@@ -28623,10 +28533,10 @@ var _hoisted_27 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_28 = [_hoisted_27];
-var _hoisted_29 = ["onClick"];
+var _hoisted_29 = [_hoisted_28];
+var _hoisted_30 = ["onClick"];
 
-var _hoisted_30 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_31 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-cart-plus"
   }, null, -1
@@ -28634,31 +28544,31 @@ var _hoisted_30 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_31 = [_hoisted_30];
-var _hoisted_32 = {
-  "class": "card-body"
-};
+var _hoisted_32 = [_hoisted_31];
 var _hoisted_33 = {
+  "class": "card-body main-theme-sec-bg-color"
+};
+var _hoisted_34 = {
   "class": "list-unstyled d-flex justify-content-between"
 };
 
-var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li data-v-b212ca50><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-muted fa fa-star\" data-v-b212ca50></i><i class=\"text-muted fa fa-star\" data-v-b212ca50></i></li>", 1);
+var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li data-v-b212ca50><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-warning fa fa-star\" data-v-b212ca50></i><i class=\"text-muted fa fa-star\" data-v-b212ca50></i><i class=\"text-muted fa fa-star\" data-v-b212ca50></i></li>", 1);
 
-var _hoisted_35 = {
-  "class": "text-muted text-right"
-};
 var _hoisted_36 = {
-  href: "#",
-  "class": "h2 text-decoration-none text-dark"
+  "class": "text-white text-right"
 };
 var _hoisted_37 = {
-  "class": "card-text"
+  href: "#",
+  "class": "h2 text-decoration-none text-white"
 };
 var _hoisted_38 = {
+  "class": "card-text text-white"
+};
+var _hoisted_39 = {
   "class": "text-muted"
 };
 
-var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<button class=\"carousel-control-prev featured-carousel-control-prev\" type=\"button\" data-bs-target=\"#carouselExampleControls\" data-bs-slide=\"prev\" data-v-b212ca50><span class=\"carousel-control-prev-icon\" aria-hidden=\"true\" data-v-b212ca50></span><span class=\"visually-hidden\" data-v-b212ca50>Previous</span></button><button class=\"carousel-control-next featured-carousel-control-next\" type=\"button\" data-bs-target=\"#carouselExampleControls\" data-bs-slide=\"next\" data-v-b212ca50><span class=\"carousel-control-next-icon\" aria-hidden=\"true\" data-v-b212ca50></span><span class=\"visually-hidden\" data-v-b212ca50>Next</span></button>", 2);
+var _hoisted_40 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<button class=\"carousel-control-prev featured-carousel-control-prev elements-bg-secondary-second-color\" type=\"button\" data-bs-target=\"#carouselExampleControls\" data-bs-slide=\"prev\" data-v-b212ca50><span class=\"carousel-control-prev-icon\" aria-hidden=\"true\" data-v-b212ca50></span><span class=\"visually-hidden\" data-v-b212ca50>Previous</span></button><button class=\"carousel-control-next featured-carousel-control-next elements-bg-secondary-second-color\" type=\"button\" data-bs-target=\"#carouselExampleControls\" data-bs-slide=\"next\" data-v-b212ca50><span class=\"carousel-control-next-icon\" aria-hidden=\"true\" data-v-b212ca50></span><span class=\"visually-hidden\" data-v-b212ca50>Next</span></button>", 2);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Header");
@@ -28667,49 +28577,49 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Modal "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Banner Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("<div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-bs-ride=\"carousel\">\r\n  <div class=\"carousel-indicators\">\r\n    <button type=\"button\" data-bs-target=\"#carouselExampleIndicators\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>\r\n    <button type=\"button\" data-bs-target=\"#carouselExampleIndicators\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>\r\n    <button type=\"button\" data-bs-target=\"#carouselExampleIndicators\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>\r\n  </div>\r\n  <div class=\"carousel-inner\">\r\n    <div class=\"carousel-item active\">\r\n      <img src=\"https://therichpost.com/wp-content/uploads/2021/05/banner_img_01.jpg\" class=\"d-block w-100\" alt=\"...\">One\r\n    </div>\r\n    <div class=\"carousel-item\">\r\n      <img src=\"https://therichpost.com/wp-content/uploads/2021/05/banner_img_02.jpg\" class=\"d-block w-100\" alt=\"...\">Two\r\n    </div>\r\n    <div class=\"carousel-item\">\r\n      <img src=\"https://therichpost.com/wp-content/uploads/2021/05/banner_img_03.jpg\" class=\"d-block w-100\" alt=\"...\">Three\r\n    </div>\r\n  </div>\r\n  <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#carouselExampleIndicators\" data-bs-slide=\"prev\">\r\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\r\n    <span class=\"visually-hidden\">Previous</span>\r\n  </button>\r\n  <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#carouselExampleIndicators\" data-bs-slide=\"next\">\r\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\r\n    <span class=\"visually-hidden\">Next</span>\r\n  </button>\r\n</div>"), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Banner Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Categories of The Month "), _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Categories of The Month "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Featured Product "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_14, [_hoisted_15, _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Modal "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Banner Hero "), _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Banner Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Categories of The Month "), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Categories of The Month "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Featured Product "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_15, [_hoisted_16, _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "#",
     onClick: _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
-      return _ctx.addToCart(_ctx.product.id);
+      return _ctx.addToCart(1);
     }, ["prevent"])),
-    "class": "btn btn-success text-white mt-2"
-  }, _hoisted_18)])])]), _hoisted_19])]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.featuredProducts, function (product) {
+    "class": "btn elements-bg-secondary-color text-white mt-2"
+  }, _hoisted_19)])])]), _hoisted_20])]), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.featuredProducts, function (product) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       "class": "col-12 col-md-4 mb-4 carousel-item featured-carousel-item",
       index: _ctx.index
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
       src: 'Images/Fashions/' + product.images[0].thumbnail,
       "class": "card-img-top featured-product-img",
       alt: "..."
     }, null, 8
     /* PROPS */
-    , _hoisted_22), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_24, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    , _hoisted_23), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_25, [_hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       href: '/shop/product/' + product.id,
-      "class": "btn btn-success text-white mt-2"
-    }, _hoisted_28, 8
+      "class": "btn elements-bg-secondary-color text-white mt-2"
+    }, _hoisted_29, 8
     /* PROPS */
-    , _hoisted_26)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    , _hoisted_27)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       href: "#",
       onClick: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
         return _ctx.addToCart(product.id);
       }, ["prevent"]),
-      "class": "btn btn-success text-white mt-2"
-    }, _hoisted_31, 8
+      "class": "btn elements-bg-secondary-color text-white mt-2"
+    }, _hoisted_32, 8
     /* PROPS */
-    , _hoisted_29)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_33, [_hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.price), 1
+    , _hoisted_30)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_34, [_hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.price), 1
     /* TEXT */
-    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.name), 1
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_37, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.name), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_37, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.description), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_38, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.description), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_38, "Reviews (" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)() + ")", 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_39, "Reviews (" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)() + ")", 1
     /* TEXT */
     )])])], 8
     /* PROPS */
-    , _hoisted_20);
+    , _hoisted_21);
   }), 256
   /* UNKEYED_FRAGMENT */
-  ))]), _hoisted_39])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Featured Product "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_shoporcheckout), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  ))]), _hoisted_40])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Featured Product ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_shoporcheckout), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -28735,7 +28645,7 @@ var _withScopeId = function _withScopeId(n) {
 };
 
 var _hoisted_1 = {
-  "class": "bg-dark",
+  "class": "main-theme-sec-bg-color",
   id: "tempaltemo_footer"
 };
 var _hoisted_2 = {
@@ -28745,7 +28655,7 @@ var _hoisted_3 = {
   "class": "row"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-4 pt-5\" data-v-a0776f22><h2 class=\"h2 text-success border-bottom pb-3 border-light logo\" data-v-a0776f22>Fashionstore Shop</h2><ul class=\"list-unstyled text-light footer-link-list\" data-v-a0776f22><li data-v-a0776f22><i class=\"fas fa-map-marker-alt fa-fw\" data-v-a0776f22></i> Kenya </li><li data-v-a0776f22><i class=\"fa fa-phone fa-fw\" data-v-a0776f22></i><a class=\"text-decoration-none\" href=\"#\" data-v-a0776f22>+254748607169</a></li><li data-v-a0776f22><i class=\"fa fa-envelope fa-fw\" data-v-a0776f22></i><a class=\"text-decoration-none\" href=\"#\" data-v-a0776f22>softwarescares@gmail.com</a></li></ul></div>", 1);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-4 pt-5\" data-v-a0776f22><h2 class=\"h2 text-white border-bottom pb-3 border-light logo\" data-v-a0776f22>Fashionstore Shop</h2><ul class=\"list-unstyled text-light footer-link-list\" data-v-a0776f22><li data-v-a0776f22><i class=\"fas fa-map-marker-alt fa-fw\" data-v-a0776f22></i> Kenya </li><li data-v-a0776f22><i class=\"fa fa-phone fa-fw\" data-v-a0776f22></i><a class=\"text-decoration-none\" href=\"#\" data-v-a0776f22>+254748607169</a></li><li data-v-a0776f22><i class=\"fa fa-envelope fa-fw\" data-v-a0776f22></i><a class=\"text-decoration-none\" href=\"#\" data-v-a0776f22>softwarescares@gmail.com</a></li></ul></div>", 1);
 
 var _hoisted_5 = {
   "class": "col-md-4 pt-5"
@@ -28770,9 +28680,9 @@ var _hoisted_9 = {
 
 var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-4 pt-5\" data-v-a0776f22><h2 class=\"h2 text-light border-bottom pb-3 border-light\" data-v-a0776f22>Further Info</h2><ul class=\"list-unstyled text-light footer-link-list\" data-v-a0776f22><li data-v-a0776f22><a class=\"text-decoration-none\" href=\"/\" data-v-a0776f22>Home</a></li><li data-v-a0776f22><a class=\"text-decoration-none\" href=\"/about\" data-v-a0776f22>About Us</a></li><li data-v-a0776f22><a class=\"text-decoration-none\" href=\"#\" data-v-a0776f22>Shop Locations</a></li><li data-v-a0776f22><a class=\"text-decoration-none\" href=\"#\" data-v-a0776f22>FAQs</a></li><li data-v-a0776f22><a class=\"text-decoration-none\" href=\"/contact\" data-v-a0776f22>Contact</a></li></ul></div>", 1);
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"row text-light mb-4\" data-v-a0776f22><div class=\"col-12 mb-3\" data-v-a0776f22><div class=\"w-100 my-3 border-top border-light\" data-v-a0776f22></div></div><div class=\"col-auto me-auto\" data-v-a0776f22><ul class=\"list-inline text-left footer-icons\" data-v-a0776f22><li class=\"list-inline-item border border-light rounded-circle text-center\" data-v-a0776f22><a class=\"text-light\" href=\"https://github.com/JohnyIrush\" target=\"_blank\" rel=\"sponsored\" data-v-a0776f22><i class=\"fab fa-github fa-sm fa-fw me-2\" data-v-a0776f22></i></a></li><li class=\"list-inline-item border border-light rounded-circle text-center\" data-v-a0776f22><a class=\"text-light text-decoration-none\" target=\"_blank\" href=\"https://www.linkedin.com/in/john-irungu-sc-developer\" data-v-a0776f22><i class=\"fab fa-linkedin fa-lg fa-fw\" data-v-a0776f22></i></a></li></ul></div><div class=\"col-auto\" data-v-a0776f22><label class=\"sr-only\" for=\"subscribeEmail\" data-v-a0776f22>Email address</label><div class=\"input-group mb-2\" data-v-a0776f22><input type=\"text\" class=\"form-control bg-dark border-light\" id=\"subscribeEmail\" placeholder=\"Email address\" data-v-a0776f22><div class=\"input-group-text btn-success text-light\" data-v-a0776f22>Subscribe</div></div></div></div>", 1);
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"row text-light mb-4\" data-v-a0776f22><div class=\"col-12 mb-3\" data-v-a0776f22><div class=\"w-100 my-3 border-top border-light\" data-v-a0776f22></div></div><div class=\"col-auto me-auto\" data-v-a0776f22><ul class=\"list-inline text-left footer-icons\" data-v-a0776f22><li class=\"list-inline-item border border-light rounded-circle text-center\" data-v-a0776f22><a class=\"text-light\" href=\"https://github.com/JohnyIrush\" target=\"_blank\" rel=\"sponsored\" data-v-a0776f22><i class=\"fab fa-github fa-sm fa-fw me-2\" data-v-a0776f22></i></a></li><li class=\"list-inline-item border border-light rounded-circle text-center\" data-v-a0776f22><a class=\"text-light text-decoration-none\" target=\"_blank\" href=\"https://www.linkedin.com/in/john-irungu-sc-developer\" data-v-a0776f22><i class=\"fab fa-linkedin fa-lg fa-fw\" data-v-a0776f22></i></a></li></ul></div><div class=\"col-auto\" data-v-a0776f22><label class=\"sr-only\" for=\"subscribeEmail\" data-v-a0776f22>Email address</label><div class=\"input-group mb-2\" data-v-a0776f22><input type=\"text\" class=\"form-control bg-dark border-light\" id=\"subscribeEmail\" placeholder=\"Email address\" data-v-a0776f22><div class=\"input-group-text main-theme-bg-color text-light\" data-v-a0776f22>Subscribe</div></div></div></div>", 1);
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"w-100 bg-black py-3\" data-v-a0776f22><div class=\"container\" data-v-a0776f22><div class=\"row pt-2\" data-v-a0776f22><div class=\"col-12\" data-v-a0776f22><p class=\"text-left text-light\" data-v-a0776f22> Copyright © 2020 SoftwaresCares | Designed and Developed by <a rel=\"sponsored\" href=\"https://johnyirush.github.io/\" target=\"_blank\" data-v-a0776f22>John Irungu</a></p></div></div></div></div>", 1);
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"w-100 py-3 main-theme-bg-color\" data-v-a0776f22><div class=\"container\" data-v-a0776f22><div class=\"row pt-2\" data-v-a0776f22><div class=\"col-12\" data-v-a0776f22><p class=\"text-left text-light\" data-v-a0776f22> Copyright © 2020 SoftwaresCares | Designed and Developed by <a rel=\"sponsored\" href=\"https://johnyirush.github.io/\" target=\"_blank\" data-v-a0776f22>John Irungu</a></p></div></div></div></div>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Footer "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("footer", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_7, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
@@ -28811,11 +28721,11 @@ var _withScopeId = function _withScopeId(n) {
 };
 
 var _hoisted_1 = {
-  "class": "navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block hidden fixed top-0 right-0 px-6 py-4 sm:block",
+  "class": "navbar navbar-expand-lg navbar-light main-theme-bg-color d-none d-lg-block hidden fixed top-0 right-0 px-6 py-4 sm:block",
   id: "templatemo_nav_top"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container text-light\" data-v-5e12a73e><div class=\"w-100 d-flex justify-content-between\" data-v-5e12a73e><div data-v-5e12a73e><i class=\"fa fa-envelope mx-2\" data-v-5e12a73e></i><a class=\"navbar-sm-brand text-light text-decoration-none\" href=\"#\" data-v-5e12a73e>softwarescares@gmail.com</a><i class=\"fa fa-phone mx-2\" data-v-5e12a73e></i><a class=\"navbar-sm-brand text-light text-decoration-none\" href=\"#\" data-v-5e12a73e>+254748607169</a></div><div data-v-5e12a73e><a class=\"text-light\" href=\"https://github.com/JohnyIrush\" target=\"_blank\" rel=\"sponsored\" data-v-5e12a73e><i class=\"fab fa-github fa-sm fa-fw me-2\" data-v-5e12a73e></i></a><a class=\"text-light\" href=\"https://www.linkedin.com/in/john-irungu-sc-developer\" target=\"_blank\" data-v-5e12a73e><i class=\"fab fa-linkedin fa-sm fa-fw\" data-v-5e12a73e></i></a></div></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container text-light\" data-v-5e12a73e><div class=\"w-100 d-flex justify-content-between\" data-v-5e12a73e><div data-v-5e12a73e><i class=\"fa fa-envelope fa-1x mx-2\" data-v-5e12a73e></i><a class=\"navbar-sm-brand text-light text-decoration-none\" href=\"#\" data-v-5e12a73e>softwarescares@gmail.com</a><i class=\"fa fa-phone fa-1x mx-2\" data-v-5e12a73e></i><a class=\"navbar-sm-brand text-light text-decoration-none\" href=\"#\" data-v-5e12a73e>+254748607169</a></div><div data-v-5e12a73e><a class=\"text-light\" href=\"https://github.com/JohnyIrush\" target=\"_blank\" rel=\"sponsored\" data-v-5e12a73e><i class=\"fab fa-github fa-sm fa-fw me-2 fa-2x\" data-v-5e12a73e></i></a><a class=\"text-light\" href=\"https://www.linkedin.com/in/john-irungu-sc-developer\" target=\"_blank\" data-v-5e12a73e><i class=\"fab fa-linkedin fa-sm fa-fw fa-2x\" data-v-5e12a73e></i></a></div></div></div>", 1);
 
 var _hoisted_3 = {
   key: 0,
@@ -28829,7 +28739,7 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Register ");
 
 var _hoisted_7 = {
-  "class": "navbar navbar-expand-lg navbar-light shadow"
+  "class": "navbar navbar-expand-lg shadow main-theme-bg-color"
 };
 var _hoisted_8 = {
   "class": "container d-flex justify-content-between align-items-center"
@@ -28837,7 +28747,7 @@ var _hoisted_8 = {
 
 var _hoisted_9 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": "navbar-brand text-success logo h1 align-self-center",
+    "class": "navbar-brand text-white logo h1 align-self-center",
     href: "/"
   }, " Fashionstore ", -1
   /* HOISTED */
@@ -28865,22 +28775,22 @@ var _hoisted_11 = {
   id: "templatemo_main_nav"
 };
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex-fill\" data-v-5e12a73e><ul class=\"nav navbar-nav d-flex justify-content-between mx-lg-auto\" data-v-5e12a73e><li class=\"nav-item\" data-v-5e12a73e><a class=\"nav-link\" href=\"/\" data-v-5e12a73e>Home</a></li><li class=\"nav-item\" data-v-5e12a73e><a class=\"nav-link\" href=\"/shop\" data-v-5e12a73e>Shop</a></li><li class=\"nav-item\" data-v-5e12a73e><a class=\"nav-link\" href=\"/about\" data-v-5e12a73e>About</a></li><li class=\"nav-item\" data-v-5e12a73e><a class=\"nav-link\" href=\"/contact\" data-v-5e12a73e>Contact</a></li></ul></div>", 1);
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex-fill\" data-v-5e12a73e><ul class=\"nav navbar-nav d-flex justify-content-between mx-lg-auto\" data-v-5e12a73e><li class=\"nav-item\" data-v-5e12a73e><a class=\"nav-link text-white\" href=\"/\" data-v-5e12a73e>Home</a></li><li class=\"nav-item\" data-v-5e12a73e><a class=\"nav-link text-white\" href=\"/shop\" data-v-5e12a73e>Shop</a></li><li class=\"nav-item\" data-v-5e12a73e><a class=\"nav-link text-white\" href=\"/about\" data-v-5e12a73e>About</a></li><li class=\"nav-item\" data-v-5e12a73e><a class=\"nav-link text-white\" href=\"/contact\" data-v-5e12a73e>Contact</a></li></ul></div>", 1);
 
 var _hoisted_13 = {
   "class": "navbar align-self-center d-flex"
 };
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3\" data-v-5e12a73e><div class=\"input-group\" data-v-5e12a73e><input type=\"text\" class=\"form-control\" id=\"inputMobileSearch\" placeholder=\"Search ...\" data-v-5e12a73e><div class=\"input-group-text\" data-v-5e12a73e><i class=\"fa fa-fw fa-search\" data-v-5e12a73e></i></div></div></div><a class=\"nav-icon d-none d-lg-inline\" href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#templatemo_search\" data-v-5e12a73e><i class=\"fa fa-fw fa-search text-dark mr-2\" data-v-5e12a73e></i></a>", 2);
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3\" data-v-5e12a73e><div class=\"input-group\" data-v-5e12a73e><input type=\"text\" class=\"form-control\" id=\"inputMobileSearch\" placeholder=\"Search ...\" data-v-5e12a73e><div class=\"input-group-text\" data-v-5e12a73e><i class=\"fa fa-fw fa-search text-white fa-2x\" data-v-5e12a73e></i></div></div></div><a class=\"nav-icon d-none d-lg-inline\" href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#templatemo_search\" data-v-5e12a73e><i class=\"fa fa-fw fa-search text-dark mr-2\" data-v-5e12a73e></i></a>", 2);
 
 var _hoisted_16 = {
-  "class": "nav-icon position-relative text-decoration-none",
+  "class": "nav-icon position-relative text-decoration-none text-white",
   href: "/cart"
 };
 
 var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": "fa fa-fw fa-cart-arrow-down text-dark mr-1"
+    "class": "fa fa-fw fa-cart-arrow-down text-white mr-1 fa-2x"
   }, null, -1
   /* HOISTED */
   );
@@ -30049,7 +29959,11 @@ var _withScopeId = function _withScopeId(n) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-a146c522"), n = n(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)(), n;
 };
 
-var _hoisted_1 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_1 = {
+  "class": "main-theme-tertiary-bg-color"
+};
+
+var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "modal fade bg-white",
     id: "templatemo_search",
@@ -30089,54 +30003,54 @@ var _hoisted_1 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_2 = {
+var _hoisted_3 = {
   "class": "row"
 };
-var _hoisted_3 = {
-  "class": "col-lg-3"
+var _hoisted_4 = {
+  "class": "col-lg-3 bg-dark"
 };
 
-var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-    "class": "h2 pb-4"
+    "class": "h1 pb-4 text-white"
   }, "Categories", -1
   /* HOISTED */
   );
 });
 
-var _hoisted_5 = {
+var _hoisted_6 = {
   "class": "list-unstyled templatemo-accordion"
 };
-var _hoisted_6 = ["index"];
-var _hoisted_7 = ["onClick"];
-var _hoisted_8 = {
+var _hoisted_7 = ["index"];
+var _hoisted_8 = ["onClick"];
+var _hoisted_9 = {
   "class": "col-lg-9"
 };
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"row\" data-v-a146c522><div class=\"col-md-6\" data-v-a146c522><ul class=\"list-inline shop-top-menu pb-3 pt-1\" data-v-a146c522><li class=\"list-inline-item\" data-v-a146c522><a class=\"h3 text-dark text-decoration-none mr-3\" href=\"#\" data-v-a146c522>All</a></li><li class=\"list-inline-item\" data-v-a146c522><a class=\"h3 text-dark text-decoration-none mr-3\" href=\"#\" data-v-a146c522>Men&#39;s</a></li><li class=\"list-inline-item\" data-v-a146c522><a class=\"h3 text-dark text-decoration-none\" href=\"#\" data-v-a146c522>Women&#39;s</a></li></ul></div><div class=\"col-md-6 pb-4\" data-v-a146c522><div class=\"d-flex\" data-v-a146c522><select class=\"form-control\" data-v-a146c522><option data-v-a146c522>Featured</option><option data-v-a146c522>A to Z</option><option data-v-a146c522>Item</option></select></div></div></div>", 1);
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"row\" data-v-a146c522><div class=\"col-md-6\" data-v-a146c522><ul class=\"list-inline shop-top-menu pb-3 pt-1\" data-v-a146c522><li class=\"list-inline-item\" data-v-a146c522><a class=\"h3 text-white text-decoration-none mr-3\" href=\"#\" data-v-a146c522>All</a></li><li class=\"list-inline-item\" data-v-a146c522><a class=\"h3 text-white text-decoration-none mr-3\" href=\"#\" data-v-a146c522>Men&#39;s</a></li><li class=\"list-inline-item\" data-v-a146c522><a class=\"h3 text-white text-decoration-none\" href=\"#\" data-v-a146c522>Women&#39;s</a></li></ul></div><div class=\"col-md-6 pb-4\" data-v-a146c522></div></div>", 1);
 
-var _hoisted_10 = {
+var _hoisted_11 = {
   "class": "row"
 };
-var _hoisted_11 = ["index"];
-var _hoisted_12 = {
+var _hoisted_12 = ["index"];
+var _hoisted_13 = {
   "class": "card mb-4 product-wap rounded-0"
 };
-var _hoisted_13 = {
+var _hoisted_14 = {
   "class": "card rounded-0"
 };
-var _hoisted_14 = ["src"];
-var _hoisted_15 = {
+var _hoisted_15 = ["src"];
+var _hoisted_16 = {
   "class": "card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
 };
-var _hoisted_16 = {
+var _hoisted_17 = {
   "class": "list-unstyled"
 };
 
-var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    "class": "btn btn-success text-white",
-    href: "shop-single.html"
+    "class": "btn elements-bg-secondary-color text-white",
+    href: "#"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "far fa-heart"
   })])], -1
@@ -30144,9 +30058,9 @@ var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_18 = ["href"];
+var _hoisted_19 = ["href"];
 
-var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_20 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "far fa-eye"
   }, null, -1
@@ -30154,10 +30068,10 @@ var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_20 = [_hoisted_19];
-var _hoisted_21 = ["onClick"];
+var _hoisted_21 = [_hoisted_20];
+var _hoisted_22 = ["onClick"];
 
-var _hoisted_22 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_23 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-cart-plus"
   }, null, -1
@@ -30165,22 +30079,22 @@ var _hoisted_22 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_23 = [_hoisted_22];
-var _hoisted_24 = {
-  "class": "card-body"
-};
+var _hoisted_24 = [_hoisted_23];
 var _hoisted_25 = {
+  "class": "card-body main-theme-sec-bg-color"
+};
+var _hoisted_26 = {
   href: "shop-single.html",
-  "class": "h3 text-decoration-none"
+  "class": "h3 text-white"
 };
 
-var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<ul class=\"w-100 list-unstyled d-flex justify-content-between mb-0\" data-v-a146c522><li data-v-a146c522></li><li class=\"pt-2\" data-v-a146c522><span class=\"product-color-dot color-dot-red float-left rounded-circle ml-1\" data-v-a146c522></span><span class=\"product-color-dot color-dot-blue float-left rounded-circle ml-1\" data-v-a146c522></span><span class=\"product-color-dot color-dot-black float-left rounded-circle ml-1\" data-v-a146c522></span><span class=\"product-color-dot color-dot-light float-left rounded-circle ml-1\" data-v-a146c522></span><span class=\"product-color-dot color-dot-green float-left rounded-circle ml-1\" data-v-a146c522></span></li></ul><ul class=\"list-unstyled d-flex justify-content-center mb-1\" data-v-a146c522><li data-v-a146c522><i class=\"text-warning fa fa-star\" data-v-a146c522></i><i class=\"text-warning fa fa-star\" data-v-a146c522></i><i class=\"text-warning fa fa-star\" data-v-a146c522></i><i class=\"text-muted fa fa-star\" data-v-a146c522></i><i class=\"text-muted fa fa-star\" data-v-a146c522></i></li></ul>", 2);
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<ul class=\"w-100 list-unstyled d-flex justify-content-between mb-0\" data-v-a146c522><li data-v-a146c522></li><li class=\"pt-2\" data-v-a146c522><span class=\"product-color-dot color-dot-red float-left rounded-circle ml-1\" data-v-a146c522></span><span class=\"product-color-dot color-dot-blue float-left rounded-circle ml-1\" data-v-a146c522></span><span class=\"product-color-dot color-dot-black float-left rounded-circle ml-1\" data-v-a146c522></span><span class=\"product-color-dot color-dot-light float-left rounded-circle ml-1\" data-v-a146c522></span><span class=\"product-color-dot color-dot-green float-left rounded-circle ml-1\" data-v-a146c522></span></li></ul><ul class=\"list-unstyled d-flex justify-content-center mb-1\" data-v-a146c522><li data-v-a146c522><i class=\"text-warning fa fa-star\" data-v-a146c522></i><i class=\"text-warning fa fa-star\" data-v-a146c522></i><i class=\"text-warning fa fa-star\" data-v-a146c522></i><i class=\"text-muted fa fa-star\" data-v-a146c522></i><i class=\"text-muted fa fa-star\" data-v-a146c522></i></li></ul>", 2);
 
-var _hoisted_28 = {
-  "class": "text-center mb-0"
+var _hoisted_29 = {
+  "class": "text-center mb-0 text-white"
 };
 
-var _hoisted_29 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_30 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     div: "row"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", {
@@ -30206,9 +30120,9 @@ var _hoisted_29 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_30 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_31 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", {
-    "class": "bg-light py-5"
+    "class": "main-theme-tertiary-bg-color py-5"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "container my-4"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -30216,8 +30130,10 @@ var _hoisted_30 = /*#__PURE__*/_withScopeId(function () {
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "col-lg-6 m-auto"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-    "class": "h1"
-  }, "Our Brands"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "h1 text-white"
+  }, "Our Brands"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "text-white"
+  }, " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "col-lg-9 m-auto tempaltemo-carousel"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "row d-flex flex-row"
@@ -30368,61 +30284,62 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Modal "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Modal "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     onProductsbyategory: _cache[0] || (_cache[0] = function () {
       return _ctx.test && _ctx.test.apply(_ctx, arguments);
     }),
     "class": "container py-5"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
+      "class": "text-white",
       index: _ctx.index
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       onClick: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
         return $options.fetchProducts(category.id);
       }, ["prevent"]),
-      "class": "text-decoration-none"
+      "class": "text-white"
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(category.name), 9
     /* TEXT, PROPS */
-    , _hoisted_7)], 8
+    , _hoisted_8)], 8
     /* PROPS */
-    , _hoisted_6);
+    , _hoisted_7);
   }), 256
   /* UNKEYED_FRAGMENT */
-  )), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("\r\n                    <li class=\"pb-3\">\r\n                        <a class=\"collapsed d-flex justify-content-between h3 text-decoration-none\" href=\"#\">\r\n                            Gender\r\n                            <i class=\"fa fa-fw fa-chevron-circle-down mt-1\"></i>\r\n                        </a>\r\n                        <ul class=\"collapse show list-unstyled pl-3\">\r\n                            <li><a class=\"text-decoration-none\" href=\"#\">Men</a></li>\r\n                            <li><a class=\"text-decoration-none\" href=\"#\">Women</a></li>\r\n                        </ul>\r\n                    </li>\r\n                    <li class=\"pb-3\">\r\n                        <a class=\"collapsed d-flex justify-content-between h3 text-decoration-none\" href=\"#\">\r\n                            Sale\r\n                            <i class=\"pull-right fa fa-fw fa-chevron-circle-down mt-1\"></i>\r\n                        </a>\r\n                        <ul id=\"collapseTwo\" class=\"collapse list-unstyled pl-3\">\r\n                            <li><a class=\"text-decoration-none\" href=\"#\">Sport</a></li>\r\n                            <li><a class=\"text-decoration-none\" href=\"#\">Luxury</a></li>\r\n                        </ul>\r\n                    </li>\r\n                    <li class=\"pb-3\">\r\n                        <a class=\"collapsed d-flex justify-content-between h3 text-decoration-none\" href=\"#\">\r\n                            Product\r\n                            <i class=\"pull-right fa fa-fw fa-chevron-circle-down mt-1\"></i>\r\n                        </a>\r\n                        <ul id=\"collapseThree\" class=\"collapse list-unstyled pl-3\">\r\n                            <li><a class=\"text-decoration-none\" href=\"#\">Bag</a></li>\r\n                            <li><a class=\"text-decoration-none\" href=\"#\">Sweather</a></li>\r\n                            <li><a class=\"text-decoration-none\" href=\"#\">Sunglass</a></li>\r\n                        </ul>\r\n                    </li>\r\n                    ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.products, function (product) {
+  ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [_hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.products, function (product) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       "class": "col-md-4",
       index: _ctx.index
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
       src: 'Images/Fashions/' + product.images[0].thumbnail,
       "class": "card-img rounded-0 img-fluid featured-product-img"
     }, null, 8
     /* PROPS */
-    , _hoisted_14), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_16, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    , _hoisted_15), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       href: '/shop/product/' + product.id,
-      "class": "btn btn-success text-white mt-2"
-    }, _hoisted_20, 8
+      "class": "btn elements-bg-secondary-color text-white mt-2"
+    }, _hoisted_21, 8
     /* PROPS */
-    , _hoisted_18)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    , _hoisted_19)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       role: "button",
       onClick: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
         return $options.addToCart(product.id);
       }, ["prevent"]),
       type: "button",
-      "class": "btn btn-success text-white mt-2"
-    }, _hoisted_23, 8
+      "class": "btn elements-bg-secondary-color text-white mt-2"
+    }, _hoisted_24, 8
     /* PROPS */
-    , _hoisted_21)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.name), 1
+    , _hoisted_22)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.name), 1
     /* TEXT */
-    ), _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.price), 1
+    ), _hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(product.price), 1
     /* TEXT */
     )])])], 8
     /* PROPS */
-    , _hoisted_11);
+    , _hoisted_12);
   }), 256
   /* UNKEYED_FRAGMENT */
-  )), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("<div class=\"col-md-4\">\r\n                        <div class=\"card mb-4 product-wap rounded-0\">\r\n                            <div class=\"card rounded-0\">\r\n                                <img class=\"card-img rounded-0 img-fluid\" src=\"assets/img/shop_02.jpg\">\r\n                                <div class=\"card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center\">\r\n                                    <ul class=\"list-unstyled\">\r\n                                        <li><a class=\"btn btn-success text-white\" href=\"shop-single.html\"><i class=\"far fa-heart\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"far fa-eye\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"fas fa-cart-plus\"></i></a></li>\r\n                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <a href=\"shop-single.html\" class=\"h3 text-decoration-none\">Oupidatat non</a>\r\n                                <ul class=\"w-100 list-unstyled d-flex justify-content-between mb-0\">\r\n                                    <li>M/L/X/XL</li>\r\n                                    <li class=\"pt-2\">\r\n                                        <span class=\"product-color-dot color-dot-red float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-blue float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-black float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-light float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-green float-left rounded-circle ml-1\"></span>\r\n                                    </li>\r\n                                </ul>\r\n                                <ul class=\"list-unstyled d-flex justify-content-center mb-1\">\r\n                                    <li>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                    </li>\r\n                                </ul>\r\n                                <p class=\"text-center mb-0\">$250.00</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"card mb-4 product-wap rounded-0\">\r\n                            <div class=\"card rounded-0\">\r\n                                <img class=\"card-img rounded-0 img-fluid\" src=\"assets/img/shop_03.jpg\">\r\n                                <div class=\"card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center\">\r\n                                    <ul class=\"list-unstyled\">\r\n                                        <li><a class=\"btn btn-success text-white\" href=\"shop-single.html\"><i class=\"far fa-heart\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"far fa-eye\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"fas fa-cart-plus\"></i></a></li>\r\n                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <a href=\"shop-single.html\" class=\"h3 text-decoration-none\">Oupidatat non</a>\r\n                                <ul class=\"w-100 list-unstyled d-flex justify-content-between mb-0\">\r\n                                    <li>M/L/X/XL</li>\r\n                                    <li class=\"pt-2\">\r\n                                        <span class=\"product-color-dot color-dot-red float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-blue float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-black float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-light float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-green float-left rounded-circle ml-1\"></span>\r\n                                    </li>\r\n                                </ul>\r\n                                <ul class=\"list-unstyled d-flex justify-content-center mb-1\">\r\n                                    <li>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                    </li>\r\n                                </ul>\r\n                                <p class=\"text-center mb-0\">$250.00</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"card mb-4 product-wap rounded-0\">\r\n                            <div class=\"card rounded-0\">\r\n                                <img class=\"card-img rounded-0 img-fluid\" src=\"assets/img/shop_04.jpg\">\r\n                                <div class=\"card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center\">\r\n                                    <ul class=\"list-unstyled\">\r\n                                        <li><a class=\"btn btn-success text-white\" href=\"shop-single.html\"><i class=\"far fa-heart\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"far fa-eye\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"fas fa-cart-plus\"></i></a></li>\r\n                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <a href=\"shop-single.html\" class=\"h3 text-decoration-none\">Oupidatat non</a>\r\n                                <ul class=\"w-100 list-unstyled d-flex justify-content-between mb-0\">\r\n                                    <li>M/L/X/XL</li>\r\n                                    <li class=\"pt-2\">\r\n                                        <span class=\"product-color-dot color-dot-red float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-blue float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-black float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-light float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-green float-left rounded-circle ml-1\"></span>\r\n                                    </li>\r\n                                </ul>\r\n                                <ul class=\"list-unstyled d-flex justify-content-center mb-1\">\r\n                                    <li>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                    </li>\r\n                                </ul>\r\n                                <p class=\"text-center mb-0\">$250.00</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"card mb-4 product-wap rounded-0\">\r\n                            <div class=\"card rounded-0\">\r\n                                <img class=\"card-img rounded-0 img-fluid\" src=\"assets/img/shop_05.jpg\">\r\n                                <div class=\"card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center\">\r\n                                    <ul class=\"list-unstyled\">\r\n                                        <li><a class=\"btn btn-success text-white\" href=\"shop-single.html\"><i class=\"far fa-heart\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"far fa-eye\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"fas fa-cart-plus\"></i></a></li>\r\n                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <a href=\"shop-single.html\" class=\"h3 text-decoration-none\">Oupidatat non</a>\r\n                                <ul class=\"w-100 list-unstyled d-flex justify-content-between mb-0\">\r\n                                    <li>M/L/X/XL</li>\r\n                                    <li class=\"pt-2\">\r\n                                        <span class=\"product-color-dot color-dot-red float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-blue float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-black float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-light float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-green float-left rounded-circle ml-1\"></span>\r\n                                    </li>\r\n                                </ul>\r\n                                <ul class=\"list-unstyled d-flex justify-content-center mb-1\">\r\n                                    <li>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                    </li>\r\n                                </ul>\r\n                                <p class=\"text-center mb-0\">$250.00</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"card mb-4 product-wap rounded-0\">\r\n                            <div class=\"card rounded-0\">\r\n                                <img class=\"card-img rounded-0 img-fluid\" src=\"assets/img/shop_06.jpg\">\r\n                                <div class=\"card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center\">\r\n                                    <ul class=\"list-unstyled\">\r\n                                        <li><a class=\"btn btn-success text-white\" href=\"shop-single.html\"><i class=\"far fa-heart\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"far fa-eye\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"fas fa-cart-plus\"></i></a></li>\r\n                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <a href=\"shop-single.html\" class=\"h3 text-decoration-none\">Oupidatat non</a>\r\n                                <ul class=\"w-100 list-unstyled d-flex justify-content-between mb-0\">\r\n                                    <li>M/L/X/XL</li>\r\n                                    <li class=\"pt-2\">\r\n                                        <span class=\"product-color-dot color-dot-red float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-blue float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-black float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-light float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-green float-left rounded-circle ml-1\"></span>\r\n                                    </li>\r\n                                </ul>\r\n                                <ul class=\"list-unstyled d-flex justify-content-center mb-1\">\r\n                                    <li>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                    </li>\r\n                                </ul>\r\n                                <p class=\"text-center mb-0\">$250.00</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"card mb-4 product-wap rounded-0\">\r\n                            <div class=\"card rounded-0\">\r\n                                <img class=\"card-img rounded-0 img-fluid\" src=\"assets/img/shop_07.jpg\">\r\n                                <div class=\"card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center\">\r\n                                    <ul class=\"list-unstyled\">\r\n                                        <li><a class=\"btn btn-success text-white\" href=\"shop-single.html\"><i class=\"far fa-heart\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"far fa-eye\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"fas fa-cart-plus\"></i></a></li>\r\n                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <a href=\"shop-single.html\" class=\"h3 text-decoration-none\">Oupidatat non</a>\r\n                                <ul class=\"w-100 list-unstyled d-flex justify-content-between mb-0\">\r\n                                    <li>M/L/X/XL</li>\r\n                                    <li class=\"pt-2\">\r\n                                        <span class=\"product-color-dot color-dot-red float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-blue float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-black float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-light float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-green float-left rounded-circle ml-1\"></span>\r\n                                    </li>\r\n                                </ul>\r\n                                <ul class=\"list-unstyled d-flex justify-content-center mb-1\">\r\n                                    <li>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                    </li>\r\n                                </ul>\r\n                                <p class=\"text-center mb-0\">$250.00</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"card mb-4 product-wap rounded-0\">\r\n                            <div class=\"card rounded-0\">\r\n                                <img class=\"card-img rounded-0 img-fluid\" src=\"assets/img/shop_08.jpg\">\r\n                                <div class=\"card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center\">\r\n                                    <ul class=\"list-unstyled\">\r\n                                        <li><a class=\"btn btn-success text-white\" href=\"shop-single.html\"><i class=\"far fa-heart\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"far fa-eye\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"fas fa-cart-plus\"></i></a></li>\r\n                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <a href=\"shop-single.html\" class=\"h3 text-decoration-none\">Oupidatat non</a>\r\n                                <ul class=\"w-100 list-unstyled d-flex justify-content-between mb-0\">\r\n                                    <li>M/L/X/XL</li>\r\n                                    <li class=\"pt-2\">\r\n                                        <span class=\"product-color-dot color-dot-red float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-blue float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-black float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-light float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-green float-left rounded-circle ml-1\"></span>\r\n                                    </li>\r\n                                </ul>\r\n                                <ul class=\"list-unstyled d-flex justify-content-center mb-1\">\r\n                                    <li>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                    </li>\r\n                                </ul>\r\n                                <p class=\"text-center mb-0\">$250.00</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-4\">\r\n                        <div class=\"card mb-4 product-wap rounded-0\">\r\n                            <div class=\"card rounded-0\">\r\n                                <img class=\"card-img rounded-0 img-fluid\" src=\"assets/img/shop_09.jpg\">\r\n                                <div class=\"card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center\">\r\n                                    <ul class=\"list-unstyled\">\r\n                                        <li><a class=\"btn btn-success text-white\" href=\"shop-single.html\"><i class=\"far fa-heart\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"far fa-eye\"></i></a></li>\r\n                                        <li><a class=\"btn btn-success text-white mt-2\" href=\"shop-single.html\"><i class=\"fas fa-cart-plus\"></i></a></li>\r\n                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"card-body\">\r\n                                <a href=\"shop-single.html\" class=\"h3 text-decoration-none\">Oupidatat non</a>\r\n                                <ul class=\"w-100 list-unstyled d-flex justify-content-between mb-0\">\r\n                                    <li>M/L/X/XL</li>\r\n                                    <li class=\"pt-2\">\r\n                                        <span class=\"product-color-dot color-dot-red float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-blue float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-black float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-light float-left rounded-circle ml-1\"></span>\r\n                                        <span class=\"product-color-dot color-dot-green float-left rounded-circle ml-1\"></span>\r\n                                    </li>\r\n                                </ul>\r\n                                <ul class=\"list-unstyled d-flex justify-content-center mb-1\">\r\n                                    <li>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-warning fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                        <i class=\"text-muted fa fa-star\"></i>\r\n                                    </li>\r\n                                </ul>\r\n                                <p class=\"text-center mb-0\">$250.00</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>")]), _hoisted_29])])], 32
+  ))]), _hoisted_30])])], 32
   /* HYDRATE_EVENTS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Brands "), _hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("End Brands"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_shoporcheckout), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Start Brands "), _hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("End Brands")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_shoporcheckout), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)], 64
   /* STABLE_FRAGMENT */
   );
 }

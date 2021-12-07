@@ -1,17 +1,17 @@
 <template>
          <!-- Start Top Nav -->
-     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block hidden fixed top-0 right-0 px-6 py-4 sm:block" id="templatemo_nav_top">
+     <nav class="navbar navbar-expand-lg  navbar-light main-theme-bg-color d-none d-lg-block hidden fixed top-0 right-0 px-6 py-4 sm:block" id="templatemo_nav_top">
       <div class="container text-light">
           <div class="w-100 d-flex justify-content-between">
               <div>
-                  <i class="fa fa-envelope mx-2"></i>
+                  <i class="fa fa-envelope fa-1x mx-2"></i>
                   <a class="navbar-sm-brand text-light text-decoration-none" href="#">softwarescares@gmail.com</a>
-                  <i class="fa fa-phone mx-2"></i>
+                  <i class="fa fa-phone fa-1x mx-2"></i>
                   <a class="navbar-sm-brand text-light text-decoration-none" href="#">+254748607169</a>
               </div>
               <div>
-                  <a class="text-light" href="https://github.com/JohnyIrush" target="_blank" rel="sponsored"><i class="fab fa-github fa-sm fa-fw me-2"></i></a>
-                  <a class="text-light" href="https://www.linkedin.com/in/john-irungu-sc-developer" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                  <a class="text-light" href="https://github.com/JohnyIrush" target="_blank" rel="sponsored"><i class="fab fa-github fa-sm fa-fw me-2 fa-2x"></i></a>
+                  <a class="text-light" href="https://www.linkedin.com/in/john-irungu-sc-developer" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw fa-2x"></i></a>
               </div>
           </div>
       </div>
@@ -35,10 +35,10 @@
 
 
 <!-- Header -->
-<nav class="navbar navbar-expand-lg navbar-light shadow ">
+<nav class="navbar navbar-expand-lg shadow main-theme-bg-color ">
   <div class="container d-flex justify-content-between align-items-center">
 
-      <a class="navbar-brand text-success logo h1 align-self-center" href="/">
+      <a class="navbar-brand text-white logo h1 align-self-center" href="/">
           Fashionstore
       </a>
 
@@ -50,16 +50,16 @@
           <div class="flex-fill">
               <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                   <li class="nav-item">
-                      <a class="nav-link" href="/">Home</a>
+                      <a class="nav-link text-white" href="/">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="/shop">Shop</a>
+                      <a class="nav-link text-white" href="/shop">Shop</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="/about">About</a>
+                      <a class="nav-link text-white" href="/about">About</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="/contact">Contact</a>
+                      <a class="nav-link text-white" href="/contact">Contact</a>
                   </li>
               </ul>
           </div>
@@ -68,15 +68,15 @@
                   <div class="input-group">
                       <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
                       <div class="input-group-text">
-                          <i class="fa fa-fw fa-search"></i>
+                          <i class="fa fa-fw fa-search text-white fa-2x"></i>
                       </div>
                   </div>
               </div>
               <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                   <i class="fa fa-fw fa-search text-dark mr-2"></i>
               </a>
-              <a class="nav-icon position-relative text-decoration-none" href="/cart">
-                  <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+              <a class="nav-icon position-relative text-decoration-none text-white" href="/cart">
+                  <i class="fa fa-fw fa-cart-arrow-down text-white mr-1 fa-2x"></i>
                   <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">{{cartTotalQuantity}}</span>
               </a>
               <!--<a class="nav-icon position-relative text-decoration-none" href="#">

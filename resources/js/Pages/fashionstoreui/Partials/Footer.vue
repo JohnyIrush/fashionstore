@@ -1,11 +1,11 @@
 <template>
 <!-- Start Footer -->
-<footer class="bg-dark" id="tempaltemo_footer">
+<footer class="main-theme-sec-bg-color" id="tempaltemo_footer">
   <div class="container">
       <div class="row">
 
           <div class="col-md-4 pt-5">
-              <h2 class="h2 text-success border-bottom pb-3 border-light logo">Fashionstore Shop</h2>
+              <h2 class="h2 text-white border-bottom pb-3 border-light logo">Fashionstore Shop</h2>
               <ul class="list-unstyled text-light footer-link-list">
                   <li>
                       <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -60,13 +60,13 @@
               <label class="sr-only" for="subscribeEmail">Email address</label>
               <div class="input-group mb-2">
                   <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
-                  <div class="input-group-text btn-success text-light">Subscribe</div>
+                  <div class="input-group-text main-theme-bg-color text-light">Subscribe</div>
               </div>
           </div>
       </div>
   </div>
 
-  <div class="w-100 bg-black py-3">
+  <div class="w-100 py-3 main-theme-bg-color">
       <div class="container">
           <div class="row pt-2">
               <div class="col-12">

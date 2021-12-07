@@ -1,5 +1,6 @@
 <template>
 <Header/>
+<div class="main-theme-tertiary-bg-color">
 <!-- Modal -->
 <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -20,50 +21,24 @@
 
 
 <!-- Start Banner Hero -->
-<!--<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://therichpost.com/wp-content/uploads/2021/05/banner_img_01.jpg" class="d-block w-100" alt="...">One
-    </div>
-    <div class="carousel-item">
-      <img src="https://therichpost.com/wp-content/uploads/2021/05/banner_img_02.jpg" class="d-block w-100" alt="...">Two
-    </div>
-    <div class="carousel-item">
-      <img src="https://therichpost.com/wp-content/uploads/2021/05/banner_img_03.jpg" class="d-block w-100" alt="...">Three
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>-->
-<div id="template-mo-jassa-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+<div id="template-mo-jassa-hero-carousel" class="carousel slide " data-bs-ride="carousel">
   <ol class="carousel-indicators">
-      <li data-bs-target="#template-mo-jassa-hero-carousel" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#template-mo-jassa-hero-carousel" data-bs-slide-to="1"></li>
-      <li data-bs-target="#template-mo-jassa-hero-carousel" data-bs-slide-to="2"></li>
+      <li data-bs-target="#template-mo-jassa-hero-carousel" data-bs-slide-to="0" class="active elements-bg-secondary-color"></li>
+      <li class="elements-bg-secondary-color" data-bs-target="#template-mo-jassa-hero-carousel" data-bs-slide-to="1"></li>
+      <li class="elements-bg-secondary-color" data-bs-target="#template-mo-jassa-hero-carousel" data-bs-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active main-theme-tertiary-bg-color">
           <div class="container">
               <div class="row p-5">
                   <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
                       <img class="img-fluid" src="https://therichpost.com/wp-content/uploads/2021/05/banner_img_01.jpg" alt="">
                   </div>
-                  <div class="col-lg-6 mb-0 d-flex align-items-center">
+                  <div class="col-lg-6 mb-0 d-flex align-items-center main-theme-sec-bg-color">
                       <div class="text-align-left align-self-center">
-                          <h1 class="h1 text-success"><b>Jassa</b> eCommerce</h1>
-                          <h3 class="h2">Lorem Ipsum Lorem Ipsum</h3>
-                          <p>
+                          <h1 class="h1 text-white"><b>Fashionstore</b> eCommerce</h1>
+                          <h3 class="h2 text-white">Lorem Ipsum Lorem Ipsum</h3>
+                          <p class="text-white">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -73,17 +48,17 @@
               </div>
           </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item main-theme-tertiary-bg-color">
           <div class="container">
               <div class="row p-5">
                   <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
                       <img class="img-fluid" src="https://therichpost.com/wp-content/uploads/2021/05/banner_img_02.jpg" alt="">
                   </div>
-                  <div class="col-lg-6 mb-0 d-flex align-items-center">
+                  <div class="col-lg-6 mb-0 d-flex align-items-center main-theme-sec-bg-color">
                       <div class="text-align-left">
-                          <h1 class="h1">Lorem Ipsum</h1>
-                          <h3 class="h2">Lorem Ipsum Lorem Ipsum</h3>
-                          <p>
+                          <h1 class="h1 text-white">Lorem Ipsum</h1>
+                          <h3 class="h2 text-white">Lorem Ipsum Lorem Ipsum</h3>
+                          <p class="text-white">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -93,17 +68,17 @@
               </div>
           </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item main-theme-tertiary-bg-color">
           <div class="container">
               <div class="row p-5">
                   <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
                       <img class="img-fluid" src="https://therichpost.com/wp-content/uploads/2021/05/banner_img_03.jpg" alt="">
                   </div>
-                  <div class="col-lg-6 mb-0 d-flex align-items-center">
+                  <div class="col-lg-6 mb-0 d-flex align-items-center main-theme-sec-bg-color">
                       <div class="text-align-left">
-                          <h1 class="h1">Lorem Ipsum</h1>
-                          <h3 class="h2">Lorem Ipsum Lorem Ipsum </h3>
-                          <p>
+                          <h1 class="h1 text-white">Lorem Ipsum</h1>
+                          <h3 class="h2 text-white">Lorem Ipsum Lorem Ipsum </h3>
+                          <p class="text-white">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -114,18 +89,20 @@
           </div>
       </div>
   </div>
-  <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-jassa-hero-carousel" role="button" data-bs-slide="prev">
-      <i class="fas fa-chevron-left"></i>
-  </a>
-  <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-jassa-hero-carousel" role="button" data-bs-slide="next">
-      <i class="fas fa-chevron-right"></i>
-  </a>
+        <button class="carousel-control-prev " type="button" data-bs-target="#template-mo-jassa-hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon text-secondary-color elements-bg-secondary-color" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next " type="button" data-bs-target="#template-mo-jassa-hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon text-secondary-color elements-bg-secondary-color" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
 </div>
 <!-- End Banner Hero -->
 
 
 <!-- Start Categories of The Month -->
-<section class="container py-5">
+<section class="container py-5 main-theme-sec-bg-color text-white">
   <div class="row text-center pt-3">
       <div class="col-lg-6 m-auto">
           <h1 class="h1">Categories of The Month</h1>
@@ -140,17 +117,17 @@
       <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"><img src="https://therichpost.com/wp-content/uploads/2021/05/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
           <h5 class="text-center mt-3 mb-3">Watches</h5>
-          <p class="text-center"><a href="/shop" class="btn btn-success">Go Shop</a></p>
+          <p class="text-center"><a href="/shop" class="btn main-theme-bg-color text-white">Go Shop</a></p>
       </div>
       <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"><img src="https://therichpost.com/wp-content/uploads/2021/05/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
           <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
-          <p class="text-center"><a href="/shop" class="btn btn-success">Go Shop</a></p>
+          <p class="text-center"><a href="/shop" class="btn main-theme-bg-color text-white">Go Shop</a></p>
       </div>
       <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"><img src="https://therichpost.com/wp-content/uploads/2021/05/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
           <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-          <p class="text-center"><a href="/shop" class="btn btn-success">Go Shop</a></p>
+          <p class="text-center"><a href="/shop" class="btn main-theme-bg-color text-white">Go Shop</a></p>
       </div>
   </div>
 </section>
@@ -158,12 +135,12 @@
 
 
 <!-- Start Featured Product -->
-<section class="bg-light">
+<section class="">
   <div class="container py-5">
       <div class="row text-center py-3">
           <div class="col-lg-6 m-auto">
-              <h1 class="h1">Featured Product</h1>
-              <p>
+              <h1 class="h1 text-white">Featured Product</h1>
+              <p class=" text-white">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -177,13 +154,13 @@
               <div class="card h-100">
                   <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_02.jpg" class="card-img-top" alt="...">
                   <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
-                          <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
-                          <li><a class="btn btn-success text-white mt-2" href="/shop/product"><i class="far fa-eye"></i></a></li>
-                          <li><a href="#" v-on:click.prevent="addToCart(product.id)" class="btn btn-success text-white mt-2" ><i class="fas fa-cart-plus"></i></a></li>
-                      </ul>
+                    <ul class="list-unstyled">
+                      <li><a class="btn elements-bg-secondary-color text-white" href="#"><i class="far fa-heart"></i></a></li>
+                      <li><a href="'/shop/product/1" class="btn elements-bg-secondary-color text-white mt-2"><i class="far fa-eye"></i></a></li>
+                      <li><a href="#"  v-on:click.prevent="addToCart(1)" class="btn elements-bg-secondary-color text-white mt-2" ><i class="fas fa-cart-plus"></i></a></li>
+                    </ul>
                   </div>
-                  <div class="card-body">
+                  <div class="card-body main-theme-sec-bg-color">
                       <ul class="list-unstyled d-flex justify-content-between">
                           <li>
                               <i class="text-warning fa fa-star"></i>
@@ -192,13 +169,13 @@
                               <i class="text-muted fa fa-star"></i>
                               <i class="text-muted fa fa-star"></i>
                           </li>
-                          <li class="text-muted text-right">$480.00</li>
+                          <li class="text-white text-right">$480.00</li>
                       </ul>
-                      <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
-                      <p class="card-text">
+                      <a href="#" class="h2 text-decoration-none text-white">Lorem Ipsum</a>
+                      <p class="card-text text-white">
                         Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum
                       </p>
-                      <p class="text-muted">Reviews (48)</p>
+                      <p class="text-white">Reviews (48)</p>
                   </div>
               </div>
           </div>
@@ -207,12 +184,12 @@
                   <img :src="'Images/Fashions/' +  product.images[0].thumbnail" class="card-img-top featured-product-img" alt="...">
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
-                                        <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a :href="'/shop/product/' + product.id" class="btn btn-success text-white mt-2"><i class="far fa-eye"></i></a></li>
-                                        <li><a href="#"  v-on:click.prevent="addToCart(product.id)" class="btn btn-success text-white mt-2" ><i class="fas fa-cart-plus"></i></a></li>
+                                        <li><a class="btn elements-bg-secondary-color text-white" href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a :href="'/shop/product/' + product.id" class="btn elements-bg-secondary-color text-white mt-2"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="#"  v-on:click.prevent="addToCart(product.id)" class="btn elements-bg-secondary-color text-white mt-2" ><i class="fas fa-cart-plus"></i></a></li>
                                     </ul>
                                 </div>
-                  <div class="card-body">
+                  <div class="card-body main-theme-sec-bg-color">
                       <ul class="list-unstyled d-flex justify-content-between">
                           <li>
                               <i class="text-warning fa fa-star"></i>
@@ -221,10 +198,10 @@
                               <i class="text-muted fa fa-star"></i>
                               <i class="text-muted fa fa-star"></i>
                           </li>
-                          <li class="text-muted text-right">{{product.price}}</li>
+                          <li class="text-white text-right">{{product.price}}</li>
                       </ul>
-                      <a href="#" class="h2 text-decoration-none text-dark">{{product.name}}</a>
-                      <p class="card-text">
+                      <a href="#" class="h2 text-decoration-none text-white">{{product.name}}</a>
+                      <p class="card-text text-white">
                           {{ product.description }}
                       </p>
                       <p   class="text-muted">Reviews ({{}})</p>
@@ -232,11 +209,11 @@
               </div>
           </div>
         </div>
-        <button class="carousel-control-prev featured-carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev featured-carousel-control-prev elements-bg-secondary-second-color" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next featured-carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next featured-carousel-control-next elements-bg-secondary-second-color" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -245,6 +222,8 @@
   </div>
 </section>
 <!-- End Featured Product -->
+
+</div>
 <shoporcheckout />
 <Footer />
 </template>
