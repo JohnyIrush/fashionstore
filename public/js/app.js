@@ -22984,11 +22984,18 @@ __webpack_require__.r(__webpack_exports__);
         $('#shop-check').modal('hide');
       } else {
         axios.get('/check-auth').then(function (response) {
-          if (response.data === true) {
+          //console.log(response.data );
+          //return;
+          if (response.data[0] === 'false') {
+            // console.log(response.data );
+            //return;
             window.location.replace('/register');
           } else {
+            //return;
             window.location.replace('/cart');
           }
+        })["catch"](function (error) {
+          console.log(error);
         });
       }
     }

@@ -30,14 +30,22 @@ export default {
       }else{
         axios.get('/check-auth')
         .then((response)=>{
-          if(response.data === true)
+            //console.log(response.data );
+            //return;
+          if(response.data[0] === 'false')
           {
+           // console.log(response.data );
+            //return;
             window.location.replace('/register');
           }
           else
           {
+            //return;
             window.location.replace('/cart');
           }
+        })
+        .catch((error)=>{
+          console.log(error);
         });
 
       }

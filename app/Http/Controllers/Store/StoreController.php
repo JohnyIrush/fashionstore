@@ -126,13 +126,13 @@ class StoreController extends Controller
     {
         if(Auth::user())
         {
-            session(['visit-cart' => false]);
-            return true;
+            session(['visitcart' => 'false']);
+            return ['true', session('visitcart')];
         }
         else
         {
-            session(['visit-cart' => true]);
-            return false;
+            session(['visitcart' => 'true']);
+            return ['false', session('visitcart')];
         }
     }
 
