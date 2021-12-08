@@ -24,14 +24,14 @@
         @routes
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="{{ mix('js/app.js') }}" defer></script>
-        <script src="{{ asset('js/main.js') }}" defer></script>
+        <script src="{{ asset('js/style.js') }}" defer></script>
         <script src="https://js.stripe.com/v3/"></script>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
         <script src="/safaricomdaraja-js/mpesa-express-form1.js" defer></script>
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js">-->
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased main-theme-tertiary-bg-color">
         @inertia
             {{--Start Ajax Call waiting--}}
             <div class="modal hide" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false">

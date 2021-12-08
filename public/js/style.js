@@ -20,6 +20,7 @@ function featuredCarousel(){
     
     $(".featured-carousel-control-prev").on("click", function () {
       if (scrollPosition > 0) {
+        
         scrollPosition -= cardWidth;
         $(".featured-carousel-inner").animate(
           { scrollLeft: scrollPosition },

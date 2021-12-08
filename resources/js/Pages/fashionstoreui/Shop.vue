@@ -92,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div div="row">
+                <!--<div div="row">
                     <ul class="pagination pagination-lg justify-content-end">
                         <li class="page-item disabled">
                             <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="#" tabindex="-1">1</a>
@@ -104,7 +104,7 @@
                             <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">3</a>
                         </li>
                     </ul>
-                </div>
+                </div>-->
             </div>
 
         </div>

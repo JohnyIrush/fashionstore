@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Store;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Gateways\Stripe\StripeController;
 use App\Http\Controllers\Store\Products\ProductController;
+use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -94,6 +95,8 @@ class StoreController extends Controller
             [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
+            'laravelVersion' => Application::VERSION,
+            'phpVersion' => PHP_VERSION
             ]
             ,200);
     }
@@ -117,6 +120,20 @@ class StoreController extends Controller
         return view('payment.stripe', [
             'intent' => $this->stripe->createSetupIntent()
         ]);
+    }
+
+    public function checkAuth()
+    {
+        if(Auth::user())
+        {
+            session(['visit-cart' => false]);
+            return true;
+        }
+        else
+        {
+            session(['visit-cart' => true]);
+            return false;
+        }
     }
 
 }

@@ -62,6 +62,7 @@ Route::post('cart-items',[PurchaseController::class,'cartItems']);
 // Fetch authentication status
 
 Route::post('authentication-status',[StoreController::class,'authenticationStatus']);
+Route::get('check-auth',[StoreController::class,'checkAuth']);
 
 //-- cart Actions
 Route::get('/remove/{id}',[PurchaseController::class, 'removeItem']);

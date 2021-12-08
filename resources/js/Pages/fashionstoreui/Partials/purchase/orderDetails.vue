@@ -2,47 +2,47 @@
 <!-- Modal -->
 <div class="modal fade" :id="'order-details' + orderId" tabindex="-1" aria-labelledby="order-detailsLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+    <div class="modal-content main-theme-tertiary-bg-color">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Order Details</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title text-white" id="exampleModalLabel">Order Details</h5>
+        <button type="button" class="btn-close text-secondary-color" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-     <div class="card Theme-two ml-1 pl-1 customer-profile-pages">
+     <div class="card Theme-two ml-1 pl-1 customer-profile-pages main-theme-tertiary-bg-color">
       <div class="row mt-1 m-0 justify-content-center mt-2">
           <div  class="col-sm-12">
-            <div class="card customer-profile-bg-color">
+            <div class="card customer-profile-bg-color main-theme-sec-bg-color">
               <div class="card-body">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center main-theme-sec-bg-color">
                     <div class="col-sm-12">
                      <div class="card Theme" >
-                         <div class="card-header">
-                             <div class="card-title heading-color heading-style">Order  </div>
+                         <div class="card-header main-theme-sec-bg-color">
+                             <div class="card-title text-white">Order  </div>
                          </div>
-                         <ul class="list-group Theme list-group-flush"  >
-                           <li class="list-group-item Theme">
+                         <ul class="list-group Theme list-group-flush main-theme-sec-bg-color text-white"  >
+                           <li class="list-group-item Theme main-theme-sec-bg-color text-white">
                             <table class="table Theme">
                               <thead>
                                 <tr>
-                                  <th class="heading-color" scope="col">Product Id</th>
-                                  <th class="heading-color" scope="col">Thumbnail</th>
-                                  <th class="heading-color" scope="col">Product</th>
-                                  <th class="heading-color" scope="col">Price</th>
-                                  <th class="heading-color" scope="col">Quantity</th>
-                                  <th class="heading-color" scope="col">Subtotal</th>
-                                  <th class="heading-color" scope="col">Total Quantity</th>
-                                  <th class="heading-color" scope="col">Total Price</th>
+                                  <th class="heading-color text-white" scope="col">Product Id</th>
+                                  <th class="heading-color text-white" scope="col">Thumbnail</th>
+                                  <th class="heading-color text-white" scope="col">Product</th>
+                                  <th class="heading-color text-white" scope="col">Price</th>
+                                  <th class="heading-color text-white" scope="col">Quantity</th>
+                                  <th class="heading-color text-white" scope="col">Subtotal</th>
+                                  <th class="heading-color text-white" scope="col">Total Quantity</th>
+                                  <th class="heading-color text-white" scope="col">Total Price</th>
                                 </tr>
                               </thead>
                               <tbody >
                                 <tr class="" v-for="item in order.items" :index="index">
-                                  <th scope="row"> {{item.item.id}}  </th>
-                                  <td> <img :src="'/Images/Fashions/' + item.item.images[0].thumbnail"> </td>
-                                  <td>{{item.item.name}}</td>
-                                  <td>{{item.item.price}}</td>
-                                  <td>{{item.qty}}</td>
-                                  <td>{{item.price}}</td>
-                                  <td></td>
-                                  <td></td>
+                                  <th class="text-white" scope="row"> {{item.item.id}}  </th>
+                                  <td class="text-white"> <img :src="'/Images/Fashions/' + item.item.images[0].thumbnail"> </td>
+                                  <td class="text-white">{{item.item.name}}</td>
+                                  <td class="text-white">{{item.item.price}}</td>
+                                  <td class="text-white">{{item.qty}}</td>
+                                  <td class="text-white">{{item.price}}</td>
+                                  <td class="text-white"></td>
+                                  <td class="text-white"></td>
                                 </tr>
                                 <tr class="" >
                                   <th scope="row">  </th>
@@ -51,8 +51,8 @@
                                   <td></td>
                                   <td></td>
                                   <td></td>
-                                  <td>{{order.totalQty}}</td>
-                                  <td>{{order.totalPrice}}</td>
+                                  <td class="text-white">{{order.totalQty}}</td>
+                                  <td class="text-white">{{order.totalPrice}}</td>
                                 </tr>
                               </tbody>
                             </table>

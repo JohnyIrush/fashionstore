@@ -1,15 +1,15 @@
 <template>
 <Header/>
-<div id="app" >
+<div id="app" class="main-theme-tertiary-bg-color" >
 
-  <form class="vue-form bg-success" @submit.prevent="submit">
+  <form class="vue-form main-theme-sec-bg-color" @submit.prevent="submit">
 
     <div class="error-message">
       <p v-show="!email.valid">Oh, please enter a valid email address.</p>
     </div>
 
-    <fieldset>
-      <legend>Contact Us We Are Available 24/7 for you</legend>
+    <fieldset class="">
+      <legend class="text-white">Contact Us We Are Available 24/7 for you</legend>
       <div>
         <label class="label" for="name">Name</label>
         <input type="text" name="name" id="name" required="" v-model="name">
@@ -43,7 +43,7 @@
         <span class="counter">{{ message.text.length }} / {{ message.maxlength }}</span>
       </div>
       <div>
-        <input type="submit" value="Send Form">
+        <input class="elements-bg-secondary-color" type="submit" value="Send Form">
       </div>
     </fieldset>
   </form>
@@ -63,7 +63,6 @@
 
 body {
   color: #fff;
-  background: #949c4e;
   background: linear-gradient(
     115deg,
     rgba(86, 216, 228, 1) 10%,

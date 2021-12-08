@@ -1,76 +1,77 @@
 <template>
       <Header />
-      <div class="container">
+      <div class=" main-theme-tertiary-bg-color">
         <div class="row">
           <div class="col-md-3"></div>
           <div class="col-md-6">
       <!-- Card -->
-      <div class="card mb-3">
+      <div class="card mb-4 mt-5 text-white main-theme-sec-bg-color">
         <div class="card-body">
-
-          <h5 class="mb-3">Order Summary</h5>
-
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
-              <div>
                 <span v-if="paymentMethod == 'mpesa'">
-                    <strong>Pay Via </strong><img src="/Images/mpesa.png" alt="Lipa Na Mpesa">
+                    <strong class="text-white">Pay Via </strong><img src="/Images/mpesa.png" alt="Lipa Na Mpesa">
                 </span>
-                <span v-if="paymentMethod == 'stripe'">
-                    <strong>Pay Via </strong><i class="fab fa-stripe fa-3x" style="color: purple;"></i>
-                </span>
-                <strong>The total amount of</strong>
+                <p v-if="paymentMethod == 'stripe'">
+                    <strong class="text-white">Pay Via </strong>
+                    <i class="fab fa-stripe fa-3x" style="color: purple;"></i>
+                </p>
+          <ul class="list-group list-group-flush main-theme-sec-bg-color">
+            <li class="list-group-item d-flex main-theme-sec-bg-color justify-content-between align-items-center border-0 px-0 mb-3">
+              <div>
+                <strong class="text-white">Total</strong>
                 <strong>
-                  <p class="mb-0">(including VAT)</p>
+                  <p  class="mb-0 text-white">(including VAT)</p>
                 </strong>
+                <span class="text-white"><strong >{{Items.totalPrice}}</strong></span>
               </div>
-              <span><strong>{{Items.totalPrice}}</strong></span>
+		 	        <div class="col-md-6" v-if="paymentMethod == 'stripe'">
+                <div class="card main-theme-sec-bg-color text-white">
+                    <div class="card-header h1">Credit or Debit Card</div>
+                    <div class="card-body ">
+                     <div class="form-group row">
+                       <label for="card-holder-name">Card Holder Name</label>
+                       <input type="text" name="card-holder-name" id="card-holder-name" class="form-control">
+                     </div>
+                     <div class="form-group row">
+                       <label for="card-holder-name">Card Details</label>
+                       <div class="card form-control" id="card-element" style='height: 2.4em; padding-top: .7em;'>
+                       <!-- a Stripe Element will be inserted here. -->
+                       </div>
+                       <!-- Used to display form errors -->
+                       <div id="card-errors"></div>
+                     </div>
+                    </div>
+                    <div class="card-footer">
+                     <button @click="processStripePayment()" id="card-button" class="btn elements-bg-secondary-color text-white" :data-secret="intent.client_secret">
+                         Pay Now({{Items.totalPrice}})
+                     </button>
+                    </div>
+                  </div>
+		 	        </div>
             </li>
           </ul>
         </div>
         <div class="card-footer">
 		 <div class="row m-0 mt-4 justify-content-between">
-		 	<div class="col-md-6">
-		 		<a href="/cart" class="deposit-confirm-back-link">
-		 			<button class="btn btn-grad btn-primary deposit-confirm-back-btn mt-2"><strong>Back</strong></button>
-		 		</a>
-		 	</div>
+      <div class="col-md-6 content-end" v-if="paymentMethod == 'mpesa'">
+      		<a  href="/cart" class="btn main-theme-bg-color "><strong>Back</strong></a>
+      </div>
 		 	<div class="col-md-6" v-if="paymentMethod == 'mpesa'">
 				
 		 		<form id="mpesa-express-form" action="" style="display: block;" method="POST" accept-charset="UTF-8"  novalidate="novalidate" enctype="multipart/form-data">
 		 			<input value="{{csrf_token()}}" name="_token" id="token" type="hidden">
 		 			<input v-model="Items.totalPrice" name="amount" id="Amount" hidden>
 		 			<input v-model="Phone" name="Phone" id="Phone" hidden>
-		 			<button type="submit" class="btn btn-success btn-grad mt-2" id="deposit-money-confirm">
+		 			<button type="submit" class="btn elements-bg-secondary-color text-white btn-grad mt-2" id="deposit-money-confirm">
 		 				 <span >Confirm</span>
 		 			</button>
 		 		</form>
 		 	</div>
-		 	<div class="col-md-6" v-if="paymentMethod == 'stripe'">
-        <div class="card">
-            <div class="card-header ">Credit or Debit Card</div>
-            <div class="card-body ">
-             <div class="form-group">
-               <label for="card-holder-name">Card Holder Name</label>
-               <input type="text" name="card-holder-name" id="card-holder-name" class="form-control">
-             </div>
-             <div class="form-group">
-               <div class="card form-control" id="card-element" style='height: 2.4em; padding-top: .7em;'>
-               <!-- a Stripe Element will be inserted here. -->
-               </div>
-               <!-- Used to display form errors -->
-               <div id="card-errors"></div>
-             </div>
-            </div>
-            <div class="card-footer">
-             <button @click="processStripePayment()" id="card-button" class="btn btn-primary" :data-secret="intent.client_secret">
-                 Update Payment Method
-             </button>
-            </div>
-          </div>
-		 	</div>
+
 		 </div>
         </div>
+      <div class="card-footer content-end" v-if="paymentMethod == 'stripe'">
+        		 		<a  href="/cart" class="btn main-theme-bg-color "><strong>Back</strong></a>
+      </div>
       </div>
       <!-- Card -->
           </div>

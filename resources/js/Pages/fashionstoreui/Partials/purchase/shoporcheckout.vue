@@ -25,9 +25,21 @@ export default {
   methods: {
    goToRequest(request){
       if (request==1) {
-        window.location.replace('/shop');
+        // window.location.replace('/shop');
+        $('#shop-check').modal('hide');
       }else{
-        window.location.replace('/cart');
+        axios.get('/check-auth')
+        .then((response)=>{
+          if(response.data === true)
+          {
+            window.location.replace('/register');
+          }
+          else
+          {
+            window.location.replace('/cart');
+          }
+        });
+
       }
    }
   },

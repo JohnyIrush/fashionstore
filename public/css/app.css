@@ -1606,6 +1606,9 @@ select {
 .flex-nowrap {
 	flex-wrap: nowrap;
 }
+.content-end {
+	align-content: flex-end;
+}
 .items-center {
 	align-items: center;
 }
@@ -2226,6 +2229,30 @@ select {
 .ease-in {
 	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
+.main-theme-bg-color{
+	background: rgb(58,5,126) !important;
+	background: linear-gradient(90deg, rgba(58,5,126,1) 6%, rgba(190,7,163,1) 52%, rgba(9,19,121,1) 92%) !important;
+}
+.main-theme-sec-bg-color{
+	background: rgb(0,1,17) !important;
+	background: linear-gradient(90deg, rgba(0,1,17,1) 2%, rgba(0,0,19,1) 95%, rgba(2,2,45,1) 100%) !important;
+}
+.main-theme-tertiary-bg-color{
+	background: rgb(3,3,24) !important;
+	background: radial-gradient(circle, rgba(3,3,24,0.8547794117647058) 68%, rgba(2,2,33,0.6755077030812324) 95%) !important;
+}
+.text-secondary-color{
+	color: rgb(77, 5, 77) !important;
+}
+.elements-bg-secondary-color{
+	background: rgb(77, 5, 77) !important;
+}
+.elements-bg-secondary-second-color{
+	background: rgb(231, 21, 161) !important;
+}
+.elements-text-secondary-second-color{
+	color: rgb(231, 21, 161) !important;
+}
 .hover\:border-gray-300:hover {
 	--tw-border-opacity: 1;
 	border-color: rgba(209, 213, 219, var(--tw-border-opacity));
@@ -2273,6 +2300,10 @@ select {
 .hover\:text-gray-900:hover {
 	--tw-text-opacity: 1;
 	color: rgba(17, 24, 39, var(--tw-text-opacity));
+}
+.hover\:text-white:hover {
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 .focus\:z-10:focus {
 	z-index: 10;
@@ -2643,33 +2674,3 @@ select {
 	}
 }
 
-.main-theme-bg-color{
-	background: rgb(58,5,126) !important;
-	background: linear-gradient(90deg, rgba(58,5,126,1) 6%, rgba(190,7,163,1) 52%, rgba(9,19,121,1) 92%) !important;
-}
-
-.main-theme-sec-bg-color{
-	background: rgb(0,1,17) !important;
-	background: linear-gradient(90deg, rgba(0,1,17,1) 2%, rgba(0,0,19,1) 95%, rgba(2,2,45,1) 100%) !important;
-}
-
-.main-theme-tertiary-bg-color{
-	background: rgb(3,3,24) !important;
-	background: radial-gradient(circle, rgba(3,3,24,0.8547794117647058) 68%, rgba(2,2,33,0.6755077030812324) 95%) !important;
-}
-
-.text-secondary-color{
-	color: rgb(77, 5, 77) !important;
-}
-
-.elements-bg-secondary-color{
-	background: rgb(77, 5, 77) !important;
-}
-
-.elements-bg-secondary-second-color{
-	background: rgb(231, 21, 161) !important;
-}
-
-.elements-text-secondary-second-color{
-	color: rgb(231, 21, 161) !important;
-}

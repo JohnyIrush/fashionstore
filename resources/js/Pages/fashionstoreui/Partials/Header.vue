@@ -1,5 +1,7 @@
 <template>
          <!-- Start Top Nav -->
+         <Head title="Welcome" />
+
      <nav class="navbar navbar-expand-lg  navbar-light main-theme-bg-color d-none d-lg-block hidden fixed top-0 right-0 px-6 py-4 sm:block" id="templatemo_nav_top">
       <div class="container text-light">
           <div class="w-100 d-flex justify-content-between">
@@ -16,16 +18,16 @@
           </div>
       </div>
       <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-          <Link v-if="$page.props.user" :href="route('dashboard')" class="text-sm text-gray-700 underline">
+          <Link v-if="$page.props.user" :href="route('dashboard')" class="btn fa fa-dashboard elements-bg-secondary-second-color text-white">
               Dashboard
           </Link>
     
           <template v-else>
-              <Link :href="route('login')" class="text-sm text-gray-700 underline">
+              <Link :href="route('login')" class="btn elements-bg-secondary-second-color text-white">
                   Log in
               </Link>
     
-              <Link v-if="canRegister" :href="route('register')" class="ml-4 text-sm text-gray-700 underline">
+              <Link v-if="canRegister" :href="route('register')" class="btn fa fa-dashboard elements-bg-secondary-color text-white">
                   Register
               </Link>
           </template>
@@ -92,15 +94,28 @@
 </template>
 
 <script>
-export default {
+
+import { Head, Link } from '@inertiajs/inertia-vue3';
+import { defineComponent } from 'vue'
+
+export default  defineComponent( {
+    components: {
+        Head,
+        Link,
+    },
     props:
     {
+        canLogin: Boolean,
+        canRegister: Boolean,
+        laravelVersion: String,
+        phpVersion: String,
     },
     data() {
         return {
             cartTotalQuantity: {},
             canLogin: Boolean,
             canRegister: Boolean,
+            
         }
     },
     methods: {
@@ -117,6 +132,8 @@ export default {
       .then((response) => {
         this.canLogin = response.data.canLogin;
         this.canRegister = response.data.canRegister;
+        this.laravelVersion = response.data.laravelVersion;
+        this.phpVersion = response.data.phpVersion;
         console.log(this.canLogin + ' ' + this.canRegister );
       })
     }
@@ -126,7 +143,7 @@ export default {
         this.cartQuantity();
         this.fetchAuthenticationState();
     }
-}
+});
 </script>
 
 <style scoped>

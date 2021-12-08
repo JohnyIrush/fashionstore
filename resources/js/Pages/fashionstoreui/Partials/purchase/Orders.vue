@@ -1,9 +1,9 @@
 <template>
-	<section class="ftco-section">
+	<section class="ftco-section main-theme-sec-bg-color ">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h4 class="text-center mb-4">Recent Orders</h4>
+					<h4 class="text-center mb-4 text-white">Recent Orders</h4>
 					<div class="table-wrap">
 						<table class="table">
 					    <thead class="thead-primary">
