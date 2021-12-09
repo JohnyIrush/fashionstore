@@ -25,18 +25,43 @@
           <div class="col-md-4 pt-5">
               <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
               <ul class="list-unstyled text-light footer-link-list">
-                  <li v-for="category in categories" :index="index"><a class="text-decoration-none" href="'/products/' + {{category.id}}">{{category.name}}</a></li>
+                  <li v-for="category in categories" :index="index">
+                  <!--<a class="text-decoration-none" href="'/products/' + {{category.id}}">{{category.name}}</a>-->
+                   <Link :href="route('shop' )" class="text-white">
+                       {{category.name}}
+                   </Link>
+                  </li>
               </ul>
           </div>
 
           <div class="col-md-4 pt-5">
               <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
               <ul class="list-unstyled text-light footer-link-list">
-                  <li><a class="text-decoration-none" href="/">Home</a></li>
-                  <li><a class="text-decoration-none" href="/about">About Us</a></li>
-                  <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
+                  <li class="nav-item">
+                   <Link :href="route('home')" class="text-white">
+                       Home
+                   </Link>
+                      <!--<a class="nav-link text-white" href="/">Home</a>-->
+                  </li>
+                  <li class="nav-item">
+                   <Link :href="route('shop')" class="text-white">
+                       Shop
+                   </Link>
+                      <!--<a class="nav-link text-white" href="/shop">Shop</a>-->
+                  </li>
+                  <li class="nav-item">
+                   <Link :href="route('about')" class="text-white">
+                       About
+                   </Link>
+                      <!--<a class="nav-link text-white" href="/about">About</a>-->
+                  </li>
+                  <li class="nav-item">
+                   <Link :href="route('contact')" class="text-white">
+                       Contact
+                   </Link>
+                      <!--<a class="nav-link text-white" href="/contact">Contact</a>-->
+                  </li>
                   <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                  <li><a class="text-decoration-none" href="/contact">Contact</a></li>
               </ul>
           </div>
 
@@ -251,7 +276,15 @@ body, ul, li, p, a, label, input, div {
 
 
 <script>
-export default {
+
+import { Head, Link } from '@inertiajs/inertia-vue3';
+import { defineComponent } from 'vue'
+
+export default defineComponent( {
+  components: {
+      Head, 
+      Link 
+  },
   props: {
 
   },
@@ -273,5 +306,5 @@ export default {
   created(){
     this.fetchCategories();
   }
-}
+});
 </script>

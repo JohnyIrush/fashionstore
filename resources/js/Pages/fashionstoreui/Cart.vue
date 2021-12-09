@@ -1,5 +1,5 @@
 <template>
-<Header/>
+<Header :dashboard="false" />
 <!--Section: Block Content-->
 <section class="main-theme-tertiary-bg-color">
    <div v-if="!cartTotalQuantity" class="card-header  main-theme-tertiary-bg-color">
@@ -19,7 +19,10 @@
       </div>
       <div class="card-footer">
           <div class="row justify-content-start">
-              <a href="/shop" class="btn text-white main-theme-bg-color col-sm-4"> <i class="fa mr-2 fa-shopping-basket" aria-hidden="true"></i>Go To Shop</a>
+              <!--<a href="/shop" class="btn text-white main-theme-bg-color col-sm-4"> <i class="fa mr-2 fa-shopping-basket" aria-hidden="true"></i>Go To Shop</a>-->
+              <Link :href="route('shop')" class="btn main-theme-bg-color btn-lg text-white col-sm-4">
+                  Go To Shop
+              </Link>
           </div>
       </div>
      </div> 
@@ -84,7 +87,12 @@
           <hr class="mb-5 bg-dark">
           <div class="card-footer">
               <div class="row justify-content-start">
-                  <a href="/shop" class="btn main-theme-bg-color text-white col-sm-4"> <i class="fa mr-2 fa-shopping-basket" aria-hidden="true"></i>{{ Items.totalPrice>0 ? 'Continue Shopping' : 'Go To Shop' }} </a>
+              <!--<a href="/shop" class="btn main-theme-bg-color text-white col-sm-4"> 
+              <i class="fa mr-2 fa-shopping-basket" aria-hidden="true"></i>{{ Items.totalPrice>0 ? 'Continue Shopping' : 'Go To Shop' }} 
+              </a>-->
+              <Link :href="route('shop')" class="btn main-theme-bg-color btn-lg text-white col-sm-4">
+                   <i class="fa mr-2 fa-shopping-basket" aria-hidden="true"></i>{{ Items.totalPrice>0 ? 'Continue Shopping' : 'Go To Shop' }}
+              </Link>
               </div>
           </div>
           <hr class="mb-5 bg-dark">

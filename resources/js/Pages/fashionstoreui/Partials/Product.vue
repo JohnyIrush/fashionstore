@@ -1,5 +1,5 @@
 <template>
-<Header/>
+<Header :dashboard="false" />
     <!-- Modal -->
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -122,7 +122,10 @@
                                 </div>
                                 <div class="row pb-3">
                                     <div class="col d-grid">
-                                        <a href="/cart" class="btn main-theme-bg-color btn-lg text-white" name="submit" value="buy">Buy</a>
+                                    <Link :href="route('cart')" class="btn main-theme-bg-color btn-lg text-white">
+                                        Buy
+                                    </Link>
+                                        <!--<a href="/cart" class="btn main-theme-bg-color btn-lg text-white" name="submit" value="buy">Buy</a>-->
                                     </div>
                                     <div class="col d-grid">
                                         <button  v-on:click.prevent="addToCart(item.id)" type="button" class="btn main-theme-bg-color btn-lg text-white"  >Add To Cart</button>
@@ -174,14 +177,19 @@ import Header from '../Partials/Header';
 import Footer from '../Partials/Footer';
 import relatedProducts from '../Partials/related-products'
 
-export default {
+import { Head, Link } from '@inertiajs/inertia-vue3';
+import { defineComponent } from 'vue'
+
+export default defineComponent({
     props:{
         product: Object
     },
     components:{
         Header,
         Footer,
-        relatedProducts
+        relatedProducts,
+        Head, 
+        Link 
     },
     methods: {
         addToCart: function(id)
@@ -196,5 +204,5 @@ export default {
     created() {
         console.log(this.product.original);
     },
-}
+});
 </script>

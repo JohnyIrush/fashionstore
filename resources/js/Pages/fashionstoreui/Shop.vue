@@ -1,5 +1,5 @@
 <template>
-<Header/>
+<Header :dashboard="false" />
    <div class="main-theme-tertiary-bg-color">
     <!-- Modal -->
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -19,14 +19,17 @@
     </div>
 
     <!-- Start Content -->
-    <div @productsbyategory="test" class="container py-5">
+    <div  class="container py-5">
         <div class="row">
 
             <div class="col-lg-3 bg-dark">
                 <h1 class="h1 pb-4 text-white">Categories</h1>
                 <ul class="list-unstyled templatemo-accordion">
                      <li class="text-white" v-for="category in categories" :index="index">
-                         <a v-on:click.prevent="fetchProducts(category.id)"  class="text-white" >{{category.name}}</a>
+                    <!--<a v-on:click.prevent="fetchProducts(category.id)"  class="text-white" >{{category.name}}</a>-->
+                   <!--<Link v-on:click.prevent="fetchProducts(category.id)" :href="route('products', category.id )" class="text-white">
+                       {{category.name}}
+                   </Link>-->
                      </li>
                 </ul>
             </div>
@@ -236,7 +239,14 @@ import Header from './Partials/Header';
 import Footer from './Partials/Footer';
 import shoporcheckout from './Partials/purchase/shoporcheckout'
 
-export default {
+import { Head, Link } from '@inertiajs/inertia-vue3';
+import { defineComponent } from 'vue'
+
+export default defineComponent( {
+  components: {
+      Head, 
+      Link 
+  },
     props:{
 
     },
@@ -298,5 +308,5 @@ data() {
     this.fetchProducts(1);
 
   }
-}
+});
 </script>

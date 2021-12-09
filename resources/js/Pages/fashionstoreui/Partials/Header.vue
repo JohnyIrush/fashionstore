@@ -18,10 +18,11 @@
           </div>
       </div>
       <div v-if="canLogin" class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-          <Link v-if="$page.props.user" :href="route('dashboard')" class="btn fa fa-dashboard elements-bg-secondary-second-color text-white">
-              Dashboard
-          </Link>
-    
+          <div v-if="$page.props.user">
+            <Link v-if="dashboard == false" :href="route('dashboard')" class="btn fa fa-dashboard elements-bg-secondary-second-color text-white">
+                Dashboard
+            </Link>
+          </div>
           <template v-else>
               <Link :href="route('login')" class="btn elements-bg-secondary-second-color text-white">
                   Log in
@@ -52,16 +53,28 @@
           <div class="flex-fill">
               <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                   <li class="nav-item">
-                      <a class="nav-link text-white" href="/">Home</a>
+                   <Link :href="route('home')" class="text-white">
+                       Home
+                   </Link>
+                      <!--<a class="nav-link text-white" href="/">Home</a>-->
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-white" href="/shop">Shop</a>
+                   <Link :href="route('shop')" class="text-white">
+                       Shop
+                   </Link>
+                      <!--<a class="nav-link text-white" href="/shop">Shop</a>-->
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-white" href="/about">About</a>
+                   <Link :href="route('about')" class="text-white">
+                       About
+                   </Link>
+                      <!--<a class="nav-link text-white" href="/about">About</a>-->
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-white" href="/contact">Contact</a>
+                   <Link :href="route('contact')" class="text-white">
+                       Contact
+                   </Link>
+                      <!--<a class="nav-link text-white" href="/contact">Contact</a>-->
                   </li>
               </ul>
           </div>
@@ -77,10 +90,14 @@
               <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                   <i class="fa fa-fw fa-search text-dark mr-2"></i>
               </a>
-              <a class="nav-icon position-relative text-decoration-none text-white" href="/cart">
+              <Link :href="route('cart')" class="nav-icon position-relative text-decoration-none text-white">
                   <i class="fa fa-fw fa-cart-arrow-down text-white mr-1 fa-2x"></i>
                   <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">{{cartTotalQuantity}}</span>
-              </a>
+              </Link>
+              <!--<a class="nav-icon position-relative text-decoration-none text-white" href="/cart">
+                  <i class="fa fa-fw fa-cart-arrow-down text-white mr-1 fa-2x"></i>
+                  <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">{{cartTotalQuantity}}</span>
+              </a>-->
               <!--<a class="nav-icon position-relative text-decoration-none" href="#">
                   <i class="fa fa-fw fa-user text-dark mr-3"></i>
                   <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
@@ -109,6 +126,7 @@ export default  defineComponent( {
         canRegister: Boolean,
         laravelVersion: String,
         phpVersion: String,
+        dashboard: Boolean
     },
     data() {
         return {

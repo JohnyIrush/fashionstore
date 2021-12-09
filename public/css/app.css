@@ -1748,10 +1748,6 @@ select {
 	--tw-bg-opacity: 1;
 	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
-.bg-gray-100 {
-	--tw-bg-opacity: 1;
-	background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
-}
 .bg-indigo-500 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
@@ -1779,6 +1775,10 @@ select {
 .bg-red-100 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
+}
+.bg-gray-100 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
 }
 .bg-gray-50 {
 	--tw-bg-opacity: 1;

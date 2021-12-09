@@ -117,17 +117,33 @@
       <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"><img src="https://therichpost.com/wp-content/uploads/2021/05/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
           <h5 class="text-center mt-3 mb-3">Watches</h5>
-          <p class="text-center"><a href="/shop" class="btn main-theme-bg-color text-white">Go Shop</a></p>
+          <p class="text-center">
+          <!--<a href="/shop" class="btn main-theme-bg-color text-white">Go Shop</a>-->
+              <Link :href="route('shop')" class="text-white btn main-theme-bg-color">
+                  Shop
+              </Link>
+          </p>
       </div>
       <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"><img src="https://therichpost.com/wp-content/uploads/2021/05/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
           <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
-          <p class="text-center"><a href="/shop" class="btn main-theme-bg-color text-white">Go Shop</a></p>
+          <p class="text-center">
+          <!--<a href="/shop" class="btn main-theme-bg-color text-white">Go Shop</a>-->
+              <Link :href="route('shop')" class="text-white btn main-theme-bg-color">
+                  Shop
+              </Link>
+  
+          </p>
       </div>
       <div class="col-12 col-md-4 p-5 mt-3">
           <a href="#"><img src="https://therichpost.com/wp-content/uploads/2021/05/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
           <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-          <p class="text-center"><a href="/shop" class="btn main-theme-bg-color text-white">Go Shop</a></p>
+          <p class="text-center">
+          <!--<a href="/shop" class="btn main-theme-bg-color text-white">Go Shop</a>-->
+              <Link :href="route('shop')" class="text-white btn main-theme-bg-color">
+                  Shop
+              </Link>
+          </p>
       </div>
   </div>
 </section>
@@ -156,7 +172,12 @@
                   <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                     <ul class="list-unstyled">
                       <li><a class="btn elements-bg-secondary-color text-white" href="#"><i class="far fa-heart"></i></a></li>
-                      <li><a href="'/shop/product/1" class="btn elements-bg-secondary-color text-white mt-2"><i class="far fa-eye"></i></a></li>
+                      <li>
+                      <Link :href="route('shopproduct', 3)" class="btn elements-bg-secondary-color text-white mt-2">
+                          <i class="far fa-eye"></i>
+                      </Link>
+                      <!--<a href="'/shop/product/1" class="btn elements-bg-secondary-color text-white mt-2"><i class="far fa-eye"></i></a>-->
+                      </li>
                       <li><a href="#"  v-on:click.prevent="addToCart(1)" class="btn elements-bg-secondary-color text-white mt-2" ><i class="fas fa-cart-plus"></i></a></li>
                     </ul>
                   </div>
@@ -185,7 +206,12 @@
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn elements-bg-secondary-color text-white" href="#"><i class="far fa-heart"></i></a></li>
-                                        <li><a :href="'/shop/product/' + product.id" class="btn elements-bg-secondary-color text-white mt-2"><i class="far fa-eye"></i></a></li>
+                                        <li>
+                                        <!--<a :href="'/shop/product/' + product.id" class="btn elements-bg-secondary-color text-white mt-2"><i class="far fa-eye"></i></a>-->
+                                         <Link :href="route('shopproduct', product.id)" class="btn elements-bg-secondary-color text-white mt-2">
+                                             <i class="far fa-eye"></i>
+                                         </Link>
+                                        </li>
                                         <li><a href="#"  v-on:click.prevent="addToCart(product.id)" class="btn elements-bg-secondary-color text-white mt-2" ><i class="fas fa-cart-plus"></i></a></li>
                                     </ul>
                                 </div>
@@ -431,6 +457,7 @@ body, ul, li, p, a, label, input, div {
 
     import { defineComponent } from 'vue'
     import { Head, Link } from '@inertiajs/inertia-vue3';
+    
     import Header from './Partials/Header';
     import Footer from './Partials/Footer';
     import shoporcheckout from './Partials/purchase/shoporcheckout'

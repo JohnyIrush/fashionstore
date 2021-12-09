@@ -1,5 +1,5 @@
 <template>
-<Header/>
+<Header :dashboard="false" />
 <div id="app" class="main-theme-tertiary-bg-color" >
 
   <form class="vue-form main-theme-sec-bg-color" @submit.prevent="submit">

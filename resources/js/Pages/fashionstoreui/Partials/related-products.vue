@@ -8,7 +8,11 @@
                   <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                     <ul class="list-unstyled">
                       <li><a class="btn elements-bg-secondary-color text-white" href="#"><i class="far fa-heart"></i></a></li>
-                      <li><a href="'/shop/product/1" class="btn elements-bg-secondary-color text-white mt-2"><i class="far fa-eye"></i></a></li>
+                      <li>
+                      <Link :href="route('shopproduct', 1)" class="elements-bg-secondary-color text-white mt-2">
+                          <i class="far fa-eye"></i>
+                      </Link>
+                      </li>
                       <li><a href="#"  v-on:click.prevent="addToCart(1)" class="btn elements-bg-secondary-color text-white mt-2" ><i class="fas fa-cart-plus"></i></a></li>
                     </ul>
                   </div>
@@ -37,7 +41,11 @@
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn elements-bg-secondary-color text-white" href="#"><i class="far fa-heart"></i></a></li>
-                                        <li><a :href="'/shop/product/' + product.id" class="btn elements-bg-secondary-color text-white mt-2"><i class="far fa-eye"></i></a></li>
+                                        <li>
+                                        <Link :href="route('shopproduct', product.id)" class=" elements-bg-secondary-color text-white mt-2">
+                                            <i class="far fa-eye"></i>
+                                        </Link>
+                                        </li>
                                         <li><a href="#"  v-on:click.prevent="addToCart(product.id)" class="btn elements-bg-secondary-color text-white mt-2" ><i class="fas fa-cart-plus"></i></a></li>
                                     </ul>
                                 </div>

@@ -1,6 +1,6 @@
 <template>
     <app-layout  title="Dashboard">
-        <Header />
+        <Header :dashboard="true" />
         <!--<template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Dashboard
@@ -34,6 +34,11 @@
             Orders,
             Header,
             Footer
+        },
+        data() {
+            return {
+                dashboard: true
+            }
         },
     })
 </script>
