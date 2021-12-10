@@ -24,13 +24,15 @@
 
             <div class="col-lg-3 bg-dark">
                 <h1 class="h1 pb-4 text-white">Categories</h1>
-                <ul class="list-unstyled templatemo-accordion">
+                <!--<ul class="list-unstyled templatemo-accordion">
                      <li class="text-white" v-for="category in categories" :index="index">
-                    <!--<a v-on:click.prevent="fetchProducts(category.id)"  class="text-white" >{{category.name}}</a>-->
-                   <!--<Link v-on:click.prevent="fetchProducts(category.id)" :href="route('products', category.id )" class="text-white">
-                       {{category.name}}
-                   </Link>-->
+                    <a class="nav-link" role="button" v-on:click.prevent="fetchProducts(category.id)"  class="text-white" >{{category.name}}</a>
                      </li>
+                </ul>-->
+                <ul class="nav flex-column">
+                  <li class="nav-item" v-for="category in categories" :index="index">
+                    <a role="button" v-on:click.prevent="fetchProducts(category.id)"  class="text-white nav-link" >{{category.name}}</a>
+                  </li>
                 </ul>
             </div>
 
@@ -60,17 +62,18 @@
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn elements-bg-secondary-color text-white" href="#"><i class="far fa-heart"></i></a></li>
-                                        <li><a :href="'/shop/product/' + product.id" class="btn elements-bg-secondary-color text-white mt-2"><i class="far fa-eye"></i></a></li>
                                         <li>
-                                          <a role="button" v-on:click.prevent="addToCart(product.id)" type="button" class="btn elements-bg-secondary-color text-white mt-2" >
-                                            <i class="fas fa-cart-plus"></i>
-                                          </a>
+                                        <!--<a :href="'/shop/product/' + product.id" class="btn elements-bg-secondary-color text-white mt-2"><i class="far fa-eye"></i></a>-->
+                                         <Link :href="route('shopproduct', product.id)" class="btn elements-bg-secondary-color text-white mt-2">
+                                             <i class="far fa-eye"></i>
+                                         </Link>
                                         </li>
+                                        <li><a href="#"  v-on:click.prevent="addToCart(product.id)" class="btn elements-bg-secondary-color text-white mt-2" ><i class="fas fa-cart-plus"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="card-body main-theme-sec-bg-color">
-                                <a href="shop-single.html" class="h3  text-white">{{ product.name }}</a>
+                                <a href="#" class="h3  text-white">{{ product.name }}</a>
                                 <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                                     <li></li>
                                     <li class="pt-2">
@@ -243,17 +246,15 @@ import { Head, Link } from '@inertiajs/inertia-vue3';
 import { defineComponent } from 'vue'
 
 export default defineComponent( {
-  components: {
-      Head, 
-      Link 
-  },
     props:{
 
     },
     components:{
         Header,
         Footer,
-        shoporcheckout
+        shoporcheckout,
+        Head, 
+        Link 
     }
 ,
 data() {

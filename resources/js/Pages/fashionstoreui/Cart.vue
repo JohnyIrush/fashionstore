@@ -90,7 +90,7 @@
               <!--<a href="/shop" class="btn main-theme-bg-color text-white col-sm-4"> 
               <i class="fa mr-2 fa-shopping-basket" aria-hidden="true"></i>{{ Items.totalPrice>0 ? 'Continue Shopping' : 'Go To Shop' }} 
               </a>-->
-              <Link :href="route('shop')" class="btn main-theme-bg-color btn-lg text-white col-sm-4">
+              <Link :href="route('shop')" class="btn main-theme-bg-color btn-lg text-white col-sm-4 btn-lg">
                    <i class="fa mr-2 fa-shopping-basket" aria-hidden="true"></i>{{ Items.totalPrice>0 ? 'Continue Shopping' : 'Go To Shop' }}
               </Link>
               </div>
@@ -126,7 +126,7 @@
             <label class="form-check-label" for="mpesa-express"> <img src="/Images/mpesa.png" alt="Lipa Na Mpesa"> </label>
           </div>
           <div class="form-check form-switch">
-            <input class="form-check-input" name="payment-method" type="radio" id="stripe" value="stripe" >
+            <input class="form-check-input" name="payment-method" type="radio" id="stripe" value="stripe" checked>
             <label class="form-check-label" for="stripe"> <i class="fab fa-stripe fa-3x" style="color: purple;"></i> </label>
           </div>
         </div>

@@ -21,7 +21,8 @@ class StoreController extends Controller
     public function __construct(ProductController $products, StripeController $stripe)
     {
         $this->products = $products;
-        $this->stripe = $stripe;    }
+        $this->stripe = $stripe;    
+    }
 
     public function home()
     {

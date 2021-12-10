@@ -50,7 +50,9 @@ Route::get('/', [StoreController::class, 'home'])->name('home');
 Route::get('/shop', [StoreController::class, 'shop'])->name("shop");
 Route::get('/about', [StoreController::class, 'about'])->name("about");
 Route::get('/contact', [StoreController::class, 'contact'])->name("contact");
+
 Route::get('/cart', [StoreController::class, 'cart'])->name("cart");
+
 Route::get('/shop/product/{id}', [StoreController::class, 'shopProduct'])->name("shopproduct");
 
 // Product Purchase routes
@@ -71,7 +73,9 @@ Route::get('/reduce/{id}',[PurchaseController::class,'reduceProductByOne']);
 //-- Payment Confirmation
 
 Route::post('/auth-user', [StoreController::class, 'authenticatedUser']);
-Route::get('/payment', [StoreController::class, 'payment']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/payment', [StoreController::class, 'payment']);
+});
 Route::get('/payment/stripe', [StoreController::class, 'stripePayment']);
 
 

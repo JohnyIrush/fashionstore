@@ -264,6 +264,22 @@ class ProductTableSeeder extends Seeder
 
     Product::create(
         [
+         'name' => "Fashion handbag",
+         'description' => $faker->paragraph(),
+         'sku' => $faker->realText(10),
+         'price' => $faker->numberBetween(1000, 20000),
+         'sale_price' => $faker->numberBetween(1000, 20000),
+         'weight' => $faker->numberBetween(1, 20),
+         'quantity' => $faker->numberBetween(1, 20),
+         'slug' => $faker->realText(10),
+         'featured' =>  $faker->boolean(),
+                      'user_id' => User::all()->random()->id,
+             'brand_id' => Brand::all()->random()->id,
+        ]
+    );
+
+    Product::create(
+        [
          'name' => "handbag",
          'description' => $faker->paragraph(),
          'sku' => $faker->realText(10),
@@ -310,5 +326,20 @@ class ProductTableSeeder extends Seeder
         ]
     );
 
+    Product::create(
+        [
+         'name' => "Nice Dress",
+         'description' => $faker->paragraph(),
+         'sku' => $faker->realText(10),
+         'price' => $faker->numberBetween(1000, 20000),
+         'sale_price' => $faker->numberBetween(1000, 20000),
+         'weight' => $faker->numberBetween(1, 20),
+         'quantity' => $faker->numberBetween(1, 20),
+         'slug' => $faker->realText(10),
+         'featured' =>  $faker->boolean(),
+                      'user_id' => User::all()->random()->id,
+             'brand_id' => Brand::all()->random()->id,
+        ]
+    );
     }
 }

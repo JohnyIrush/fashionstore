@@ -70,7 +70,7 @@
 		 </div>
         </div>
       <div class="card-footer content-end" v-if="paymentMethod == 'stripe'">
-        		 		<a  href="/cart" class="btn main-theme-bg-color "><strong>Back</strong></a>
+        		 		<Link  :href="route('cart')" class="btn main-theme-bg-color "><strong>Back</strong></Link>
       </div>
       </div>
       <!-- Card -->
@@ -86,13 +86,18 @@
 import Header from '../Header';
 import Footer from '../Footer';
 
-export default {
+import { Head, Link } from '@inertiajs/inertia-vue3';
+import { defineComponent } from 'vue'
+
+export default defineComponent({
    props: {
      intent: Object
    },
     components:{
         Header,
-        Footer
+        Footer,
+        Head,
+        Link
     },
     data () {
       return{
@@ -180,13 +185,7 @@ export default {
     },
     mounted()
     {
-      this.renderStripeElements();
-      const stripe = Stripe('pk_test_51H9qTECmoUmjZivfKU4rPUUpjCxOW3obeJS07Yspbj3f3M1QyYITbxiBjliGJfYq4pdMSs1pg36Dx2JpN9Ir7UHn00Z5hpub3d');
-        
-      const elements = stripe.elements();
-      const cardElement = elements.create('card');
-        
-      cardElement.mount('#card-element');
+
        /*
             const cardHolderName = document.getElementById('card-holder-name');
 
@@ -244,6 +243,16 @@ export default {
             });
             */
 
+if(localStorage.paymentMethod == 'stripe')
+{
+      this.renderStripeElements();
+      const stripe = Stripe('pk_test_51H9qTECmoUmjZivfKU4rPUUpjCxOW3obeJS07Yspbj3f3M1QyYITbxiBjliGJfYq4pdMSs1pg36Dx2JpN9Ir7UHn00Z5hpub3d');
+        
+      const elements = stripe.elements();
+      const cardElement = elements.create('card');
+        
+      cardElement.mount('#card-element');
+
      const cardHolderName = document.getElementById('card-holder-name');
      const cardButton = document.getElementById('card-button');
      
@@ -296,7 +305,8 @@ export default {
                     });
          }
      });
+}
 
     }
-}
+});
 </script>

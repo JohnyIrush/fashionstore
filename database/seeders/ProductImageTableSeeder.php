@@ -51,14 +51,6 @@ class ProductImageTableSeeder extends Seeder
         ProductImage::create(
             [
                 'product_id' => 5,
-                'thumbnail' => "model-gdbbfe2ce5_640.jpg",
-                'full' => "",
-            ]
-        );
-
-        ProductImage::create(
-            [
-                'product_id' => 6,
                 'thumbnail' => "Super sneakers.jpg",
                 'full' => "",
             ]
@@ -66,7 +58,7 @@ class ProductImageTableSeeder extends Seeder
 
         ProductImage::create(
             [
-                'product_id' => 7,
+                'product_id' => 6,
                 'thumbnail' => "amethyst-g3db5fcf9f_640.jpg",
                 'full' => "",
             ]
@@ -74,7 +66,7 @@ class ProductImageTableSeeder extends Seeder
 
         ProductImage::create(
             [
-                'product_id' => 8,
+                'product_id' => 7,
                 'thumbnail' => "curb-chain-g775c4d86d_640.jpg",
                 'full' => "",
             ]
@@ -82,8 +74,18 @@ class ProductImageTableSeeder extends Seeder
 
         ProductImage::create(
             [
-                'product_id' => 9,
+                'product_id' => 8,
                 'thumbnail' => "Golden watch.png",
+                'full' => "",
+            ]
+        );
+
+
+
+        ProductImage::create(
+            [
+                'product_id' => 9,
+                'thumbnail' => "Nice speks.png",
                 'full' => "",
             ]
         );
@@ -91,15 +93,6 @@ class ProductImageTableSeeder extends Seeder
         ProductImage::create(
             [
                 'product_id' => 10,
-                'thumbnail' => "Nice speks.png",
-                'full' => "",
-            ]
-        );
-
-
-        ProductImage::create(
-            [
-                'product_id' => 11,
                 'thumbnail' => "Nice watch.png",
                 'full' => "",
             ]
@@ -108,7 +101,7 @@ class ProductImageTableSeeder extends Seeder
 
         ProductImage::create(
             [
-                'product_id' => 12,
+                'product_id' => 11,
                 'thumbnail' => "pearls-g4a254efc9_640.jpg",
                 'full' => "",
             ]
@@ -116,7 +109,7 @@ class ProductImageTableSeeder extends Seeder
 
         ProductImage::create(
             [
-                'product_id' => 13,
+                'product_id' => 12,
                 'thumbnail' => "rings-g7ab512342_640.png",
                 'full' => "",
             ]
@@ -124,7 +117,7 @@ class ProductImageTableSeeder extends Seeder
 
         ProductImage::create(
             [
-                'product_id' => 14,
+                'product_id' => 13,
                 'thumbnail' => "silver watch.png",
                 'full' => "",
             ]
@@ -132,8 +125,16 @@ class ProductImageTableSeeder extends Seeder
 
         ProductImage::create(
             [
-                'product_id' => 15,
+                'product_id' => 14,
                 'thumbnail' => "Super neckless.png",
+                'full' => "",
+            ]
+        );
+
+        ProductImage::create(
+            [
+                'product_id' => 15,
+                'thumbnail' => "briefcase-g4cd5f52a0_640.png",
                 'full' => "",
             ]
         );
@@ -157,7 +158,7 @@ class ProductImageTableSeeder extends Seeder
         ProductImage::create(
             [
                 'product_id' => 18,
-                'thumbnail' => "money-g9015a0239_640.jpg",
+                'thumbnail' => "Women-Wallets.jpg",
                 'full' => "",
             ]
         );
@@ -165,9 +166,20 @@ class ProductImageTableSeeder extends Seeder
         ProductImage::create(
             [
                 'product_id' => 19,
-                'thumbnail' => "Women-Wallets.jpg",
+                'thumbnail' => "money-g9015a0239_640.jpg",
                 'full' => "",
             ]
         );
+
+        
+        ProductImage::create(
+            [
+                'product_id' => 20,
+                'thumbnail' => "model-gdbbfe2ce5_640.jpg",
+                'full' => "",
+            ]
+        );
+
+
     }
 }
